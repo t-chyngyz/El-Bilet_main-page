@@ -33,6 +33,7 @@ $header_text-color: #FFFFFF;
 
         ul {
             display: flex;
+            align-items: center;
             padding: 0;
 
             li {
@@ -43,45 +44,35 @@ $header_text-color: #FFFFFF;
         &__link-aboutus {
             text-decoration: none;
             color: $header_text-color;
-            background-color: $hedaer_background-color-btn;
-            padding: 7px 32px 7px 32px;
             border-radius: 8px;
         }
 
         &__link-services {
             text-decoration: none;
             color: $header_text-color;
-            background-color: $hedaer_background-color-btn;
-            padding: 7px 12px 7px 12px;
             border-radius: 8px;
-            margin-left: 20px;
+            margin-left: 30px;
         }
 
         &__link-polls {
             text-decoration: none;
             color: $header_text-color;
-            background-color: $hedaer_background-color-btn;
-            padding: 7px 7px 7px 7px;
             border-radius: 8px;
-            margin-left: 20px;
+            margin-left: 30px;
         }
 
         &__link-contacts {
             text-decoration: none;
             color: $header_text-color;
-            background-color: $hedaer_background-color-btn;
-            padding: 7px 7px 7px 7px;
             border-radius: 8px;
-            margin-left: 20px;
+            margin-left: 30px;
         }
 
         &__link-registration {
             text-decoration: none;
             color: $header_text-color;
-            background-color: $hedaer_background-color-btn;
-            padding: 7px 6px 7px 7px;
             border-radius: 8px;
-            margin-left: 20px;
+            margin-left: 30px;
         }
     }
 
@@ -89,15 +80,12 @@ $header_text-color: #FFFFFF;
         font-family: $header_font-family;
         font-weight: $header_font-weight;
         font-size: $haeder_font-size;
-
-        background-color: $hedaer_background-color-btn;
+        background-color: $header_background-color;
         color: #FFFFFF;
 
         border: 0;
         border-radius: 8px;
         outline: none;
-
-        padding: 7px 6px 7px 6px;
-        margin-left: 20px;
+        margin-left: 30px;
     }
 }
