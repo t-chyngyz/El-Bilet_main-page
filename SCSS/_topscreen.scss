@@ -108,6 +108,11 @@ $topscreen_background-color__pink: #B490AC;
             width: 892px;
             border-radius: 12px;
             margin: 62px auto 0;
+            
+            a {
+                text-decoration: none;
+                width: 10000px;
+            }
 
             img {
                 width: 71px;
@@ -121,6 +126,7 @@ $topscreen_background-color__pink: #B490AC;
                 font-size: 36px;
                 color: $topscreen_text-color;
                 margin-left: 95px;
+                width: 710px;
                 text-transform: uppercase;
             }
         }
