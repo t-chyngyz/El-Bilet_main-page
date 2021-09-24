@@ -9,11 +9,12 @@ $topscreen_background-color__pink: #B490AC;
 
 .top-screen {
     max-height: 100vh;
+    overflow: hidden;
     position: relative;
+    padding-bottom: 56.25%;
 
     &__video {
         position: relative;
-        padding-bottom: 56.25%;
 
         &-media {
             width: 100%;
