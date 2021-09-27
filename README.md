@@ -30,6 +30,7 @@
 5) Клонируем git:
   Если Windows в cmd(командная строка), если MacOS в терминале и набираем:
     git clone https://github.com/El-Bilet/El-Bilet_main-page .
+    git checkout chyngyz
 6) Устанавливаем Веб-фреймворк Django (Python):
   Если Windows в cmd(командная строка), если MacOS в терминале и набираем:
     pip install -r requirements.txt
