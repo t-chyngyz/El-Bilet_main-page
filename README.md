@@ -1,7 +1,7 @@
 # [El-Bilet_main-page](https://el-bilet.github.io/El-Bilet_main-page/)
 
 Инструкция по установке Django.
-1 Создаем каталог:
+1) Создаем каталог:
   a) Если Windows запускаем cmd(командная строка) и набираем там:
      d:
      mkdir El-Bilet_main-page
@@ -9,7 +9,7 @@
   b) Если MacOS запускаем терминал и набираем там:
      mkdir ~/El-Bilet_main-page
      cd ~/El-Bilet_main-page
-2 Скачиваем Python3:
+2. Скачиваем Python3:
   a) Если Windows скачиваем здесь https://www.python.org/downloads/windows/
   b) Если MasOS скачиваем здесь https://www.python.org/downloads/macos/
 3 Устанавливаем Python3:
