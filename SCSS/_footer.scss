@@ -21,6 +21,8 @@ $footer_color-text: #FFFFFF;
         &__nav {
 
             ul {
+                padding: 0;
+
                 li {
                     list-style: none;
                 }
@@ -32,11 +34,15 @@ $footer_color-text: #FFFFFF;
 
             &__link {
                 font-family: $footer_font-family;
-                font-weight: $footer_font-weight__700;
+                font-weight: 500;
                 font-style: $footer_font-style;
                 font-size: 24px;
                 color: $footer_color-text;
                 text-decoration: none;
+
+                &:hover {
+                    color: #B490AC;
+                }
             }
         }
 
