@@ -2,6 +2,7 @@ $header_font-family: 'Montserrat Alternates',
 sans-serif;
 $header_font-style: normal;
 $header_font-weight: 400;
+$header_font-weight_700: 700;
 $haeder_font-size: 24px;
 $header_background-color: #0E789F;
 $hedaer_background-color-btn: #5A5757;
@@ -27,7 +28,7 @@ $header_text-color: #FFFFFF;
 
     .nav {
         font-family: $header_font-family;
-        font-weight: $header_font-weight;
+        font-weight: 500;
         font-style: $header_font-style;
         font-size: $haeder_font-size;
 
@@ -45,6 +46,10 @@ $header_text-color: #FFFFFF;
             text-decoration: none;
             color: $header_text-color;
             border-radius: 8px;
+
+            &:hover {
+                color: #B490AC;
+            }
         }
 
         &__link-services {
@@ -52,6 +57,10 @@ $header_text-color: #FFFFFF;
             color: $header_text-color;
             border-radius: 8px;
             margin-left: 30px;
+
+            &:hover {
+                color: #B490AC;
+            }
         }
 
         &__link-polls {
@@ -59,6 +68,10 @@ $header_text-color: #FFFFFF;
             color: $header_text-color;
             border-radius: 8px;
             margin-left: 30px;
+
+            &:hover {
+                color: #B490AC;
+            }
         }
 
         &__link-contacts {
@@ -66,6 +79,10 @@ $header_text-color: #FFFFFF;
             color: $header_text-color;
             border-radius: 8px;
             margin-left: 30px;
+
+            &:hover {
+                color: #B490AC;
+            }
         }
 
         &__link-registration {
@@ -73,12 +90,16 @@ $header_text-color: #FFFFFF;
             color: $header_text-color;
             border-radius: 8px;
             margin-left: 30px;
+
+            &:hover {
+                color: #B490AC;
+            }
         }
     }
 
     .langs {
         font-family: $header_font-family;
-        font-weight: $header_font-weight;
+        font-weight: $header_font-weight_700;
         font-size: $haeder_font-size;
         background-color: $header_background-color;
         color: #FFFFFF;
