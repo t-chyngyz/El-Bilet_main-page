@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700;800&display=swap" rel="stylesheet">
+{% load static %}
+{% block custom_css %}
+    <link rel="stylesheet" href="{% static 'bilet/CSS/style.min.css' %}">
+
+
+    <title>Главный страница</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__inner-line">
+            <div class="header__logo">
+                <a href="#" class="header__logo-link">
+                    <img src="{% static 'bilet/IMG/logo.png' %}" alt="logo el bilet">
+                </a>
+            </div>
+
+            <nav class="nav">
+                <ul>
+                    <a href="#" class="nav__link-aboutus"><li>О нас</li></a>
+                    <a href="#" class="nav__link-services"><li>Услуги</li></a>
+                    <a href="#" class="nav__link-polls"><li>Опросы</li></a>
+                    <a href="#" class="nav__link-contacts"><li>Контакты</li></a>
+                    <a href="#" class="nav__link-registration"><li>Регистрация</li></a>
+                    <li>
+                        <select name="lang" class="langs" id="langs">
+                            <option value="ru">RU</option>
+                            <option value="en">EN</option>
+                            <option value="kg">KG</option>
+                        </select>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="top-screen">
+            <div class="top-screen__video">
+                <video class="top-screen__video-media" src="{% static 'bilet/VIDEO/bg__video.mp4' %}" autoplay muted loop></video>
+            </div>
+
+            <div class="all-element">
+                <div class="all-element__text">
+                    <h1 class="all-element__text-h1"><span>Эл билет</span><br> Развитие нашего общества в наших руках</h1>
+
+                    <h2 class="all-element__text-h2">Оставьте ваше обращение или предложение и вы сделаете неоценимый вклад в развитие нашего общества</h2>
+                </div>
+
+                <div class="all-element__block-treatment">
+                    <div class="all-element__block-treatment__rating">
+                        <div class="all-element__block-treatment__rating-inner">
+                            <h1 class="all-element__block-treatment__rating-inner__text-style">+2 522 132<br>обращений</h1>
+
+                            <h1 class="all-element__block-treatment__rating-inner__text-style">+1 152 500<br>участников</h1>
+
+                            <h1 class="all-element__block-treatment__rating-inner__text-style">+500 877<br>решено</h1>
+                        </div>
+                    </div>
+
+                    <div class="all-element__block-treatment__treatment">
+                        <img src="{% static 'bilet/IMG/megaphone.png' %}" alt="megaphone">
+
+                        <a href="#"><h3 class="all-element__block-treatment__treatment__text-style">Оставить обращение</h3></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="appeal">
+            <div class="appeal__inside-block">
+                <h1 class="appeal__inside-block__heading-text">Ваши обращения</h1>
+
+                <div class="appeal__inside-block__blocks">
+                    <div class="appeal__inside-block__blocks__style">
+                        <div class="appeal__inside-block__blocks__style__photo-block"></div>
+
+                        <h3 class="appeal__inside-block__blocks__style__text">яма на дороге</h3>
+
+                        <div class="appeal__inside-block__blocks__style__lcd">
+                            <div class="appeal__inside-block__blocks__style__lcd__inline">
+                                <img src="{% static 'bilet/IMG/face_pink.png' %}" alt="">
+
+                                <img src="{% static 'bilet/IMG/face_blue.png' %}" alt="">
+
+                                <img src="{% static 'bilet/IMG/face_pink1.png' %}" alt="">
+                            </div>
+                        </div>
+
+                        <div class="appeal__inside-block__blocks__style__lcd__location-share">
+                            <div class="appeal__inside-block__blocks__style__lcd__location-share__location">
+                                <h4 class="appeal__inside-block__blocks__style__lcd__location-share__location__text-style">показать на карте</h4>
+
+                                <img src="{% static 'bilet/IMG/location.png' %}" alt="">
+                            </div>
+
+                            <div class="appeal__inside-block__blocks__style__lcd__location-share__share">
+                                <h4 class="appeal__inside-block__blocks__style__lcd__location-share__share__text-style">поделиться</h4>
+
+                                <img src="{% static 'bilet/IMG/share.png' %}" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="appeal__inside-block__blocks__style">
+                        <div class="appeal__inside-block__blocks__style__photo-block"></div>
+
+                        <h3 class="appeal__inside-block__blocks__style__text">яма на дороге</h3>
+
+                        <div class="appeal__inside-block__blocks__style__lcd">
+                            <div class="appeal__inside-block__blocks__style__lcd__inline">
+                                <img src="{% static 'bilet/IMG/face_pink.png' %}" alt="">
+
+                                <img src="{% static 'bilet/IMG/face_blue.png' %}" alt="">
+
+                                <img src="{% static 'bilet/IMG/face_pink1.png' %}" alt="">
+                            </div>
+                        </div>
+
+                        <div class="appeal__inside-block__blocks__style__lcd__location-share">
+                            <div class="appeal__inside-block__blocks__style__lcd__location-share__location">
+                                <h4 class="appeal__inside-block__blocks__style__lcd__location-share__location__text-style">показать на карте</h4>
+
+                                <img src="{% static 'bilet/IMG/location.png' %}" alt="">
+                            </div>
+
+                            <div class="appeal__inside-block__blocks__style__lcd__location-share__share">
+                                <h4 class="appeal__inside-block__blocks__style__lcd__location-share__share__text-style">поделиться</h4>
+
+                                <img src="{% static 'bilet/IMG/share.png' %}" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="appeal__inside-block__blocks__style">
+                        <div class="appeal__inside-block__blocks__style__photo-block"></div>
+
+                        <h3 class="appeal__inside-block__blocks__style__text">яма на дороге</h3>
+
+                        <div class="appeal__inside-block__blocks__style__lcd">
+                            <div class="appeal__inside-block__blocks__style__lcd__inline">
+                              <img src="{% static 'bilet/IMG/face_pink.png' %}" alt="">
+
+                              <img src="{% static 'bilet/IMG/face_blue.png' %}" alt="">
+
+                              <img src="{% static 'bilet/IMG/face_pink1.png' %}" alt="">
+                            </div>
+                        </div>
+
+                        <div class="appeal__inside-block__blocks__style__lcd__location-share">
+                            <div class="appeal__inside-block__blocks__style__lcd__location-share__location">
+                                <h4 class="appeal__inside-block__blocks__style__lcd__location-share__location__text-style">показать на карте</h4>
+
+                                <img src="{% static 'bilet/IMG/share.png' %}" alt="">
+                            </div>
+
+                            <div class="appeal__inside-block__blocks__style__lcd__location-share__share">
+                                <h4 class="appeal__inside-block__blocks__style__lcd__location-share__share__text-style">поделиться</h4>
+
+                                <img src="{% static 'bilet/IMG/share.png' %}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+{% endblock custom_css %}
+</body>
+
+</html>
