@@ -1,0 +1,93 @@
+$offer_font-family: 'Roboto', sans-serif;
+$offer_font-weight_400: 400;
+$offer_font-weight_700: 700;
+$offer_font-style: normal;
+
+
+.offer {
+
+    &__block {
+        background-color: #DAE3F0;
+        max-width: 1240px;
+        margin: 25px auto 0;
+
+        &__yesno {
+            display: flex;
+            align-items: center;
+        }
+
+        h2 {
+            font-size: 34px;
+        }
+
+        &__yesno-yeslink {
+            font-family: $offer_font-family;
+            font-style: $offer_font-style;
+            font-weight: $offer_font-weight_700;
+            font-size: 30px;
+
+            background-color: #B490AC;
+            color: #fff;
+            border: 0;
+            padding: 7px 54px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        &__yesno-nolink {
+            font-family: $offer_font-family;
+            font-style: $offer_font-style;
+            font-weight: $offer_font-weight_700;
+            font-size: 30px;
+
+            background-color: #0E789F;
+            color: #fff;
+            border: 0;
+            padding: 7px 54px;
+            border-radius: 10px;
+            cursor: pointer;           
+        }
+        
+        &__text {
+                font-family: $offer_font-family;
+                font-size: 20px;
+                font-weight: $offer_font-weight_400;
+        }
+
+        &__form {
+            max-width: 1200px;
+            margin: 0 auto;
+
+            &__labels {
+                font-family: $offer_font-family;
+                font-weight: $offer_font-weight_400;
+                font-style: $offer_font-style;
+                font-size: 20px;
+                border: 0;
+
+
+                // width: 1200px;
+                // height: 100px;
+                // border: 1px solid #54274A;
+                // outline: none;
+                // padding: 0;
+                // margin: 10px 0 35px 0;
+                // padding: 0 0 0 20px;
+                // font-size: 18px;
+            }
+            
+            // &__author {
+            //     position: absolute;
+            //     left: 747px;
+            //     top: 149px;
+            //     border: 0;
+            //     background-color: #000;
+            //     outline: none;
+            // }
+        }
+    }
+}
+
+.redstar {
+    color: red;
+}
