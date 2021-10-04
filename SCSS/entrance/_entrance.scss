@@ -1,0 +1,143 @@
+$entrance_font-family_alternates: 'Montserrat Alternates',
+sans-serif;
+$entrance_font-family: 'Montserrat',
+sans-serif;
+$entrance_font-weight_700: 700;
+$entrance_font-weight_400: 400;
+$entrance_font-style: normal;
+$entrance_background-color: #FFFFFF;
+$entrance_btn-color: #0E789F;
+$entrance_text-color: #000000;
+
+.entrance {
+    margin: 202px 249px 158px 100px;
+
+    &__inside-blocks {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__logo-text {
+
+            &__style-text {
+                font-family: $entrance_font-family_alternates;
+                font-weight: $entrance_font-weight_700;
+                font-style: $entrance_font-style;
+                font-size: 96px;
+                color: #723D66;
+                margin: 0 0 100px 0;
+            }
+
+            img {
+                width: 364px;
+            }
+        }
+
+        &__form {
+            max-width: 461px;
+
+            &__heading-text {
+                font-family: $entrance_font-family_alternates;
+                font-weight: $entrance_font-weight_400;
+                font-style: $entrance_font-style;
+                font-size: 18px;
+                width: 461px;
+                text-align: center;
+
+                a {
+                    font-weight: $entrance_font-weight_700;
+                    text-decoration: none;
+                    color: $entrance_text-color;
+                }
+            }
+
+            &__block-form {
+                background-color: #DAE3F0;
+                box-shadow: 0px 0px 7px 2px #9D6F93;
+                border-radius: 5px;
+                padding: 56px 0 70px 0;
+                margin: 10px 0 0 0;
+
+                &__heading-text-style {
+                    font-family: $entrance_font-family_alternates;
+                    font-weight: $entrance_font-weight_700;
+                    font-size: 24px;
+                    font-style: $entrance_font-style;
+                    text-align: center;
+                    margin: 0 0 20px 0;
+                }
+
+                &__text-style {
+                    font-family: $entrance_font-family;
+                    font-weight: $entrance_font-weight_400;
+                    font-style: $entrance_font-style;
+                    font-size: 14px;
+                }
+
+                form {
+                    width: 378px;
+                    margin: 0 auto;
+                }
+
+                &__style-input-email {
+                    width: 378px;
+                    height: 55px;
+
+                    font-size: 18px;
+                    border: 1px solid $entrance_text-color;
+                    border-radius: 10px;
+                    outline: none;
+                    margin: 9px 0 23px 0;
+                    padding: 0 0 0 20px;
+                }
+
+                &__style-input-password {
+                    width: 378px;
+                    height: 55px;
+
+                    font-size: 18px;
+                    border: 1px solid $entrance_text-color;
+                    border-radius: 10px;
+                    outline: none;
+                    margin: 9px 0 0 0;
+                    padding: 0 0 0 20px;
+                }
+
+                &__btn-login {
+                    font-family: $entrance_font-family_alternates;
+                    font-weight: $entrance_font-weight_700;
+                    font-style: $entrance_font-style;
+                    font-size: 14px;
+
+                    text-transform: uppercase;
+                    background-color: $entrance_btn-color;
+                    border-radius: 20px;
+                    padding: 9px 159px 9px 159px;
+                    outline: none;
+                    border: 1px solid $entrance_text-color;
+                    color: #fff;
+                    margin: 30px 0 0 0;
+                    cursor: pointer;
+                }
+            }
+
+            &__password-survey-results {
+                text-align: center;
+                margin: 23px 0 0 0;
+                
+                a {
+                    font-family: $entrance_font-family_alternates;
+                    font-weight: $entrance_font-weight_700;
+                    font-style: $entrance_font-style;
+                    font-size: 14px;
+                    text-decoration: none;
+                    color: #723D66;
+                }
+
+                a+a {
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+}
