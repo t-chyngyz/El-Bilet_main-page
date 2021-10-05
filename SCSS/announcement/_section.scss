@@ -1,0 +1,36 @@
+@import 'vars';
+
+section{
+    margin-left: 100px;
+    .wrapper-2{
+        margin-top: 20px;
+        margin: 20px 0px;
+    }
+
+    p{
+        font-size: 18px;
+    }
+
+    .files{
+      display: block;
+   
+ &__botton{
+     margin-bottom: 20px;
+ }
+        &__photo{
+            border: 1px solid black;
+            width: 300px;
+            height: 200px;
+            margin: 0px 0px 0px 20px;
+        }
+    }
+        button .button-like{
+            display: block;
+        //  margin: 20px 0px;
+            width: 100px;
+            height: 30px;
+            cursor: pointer;
+        
+    }
+
+}
