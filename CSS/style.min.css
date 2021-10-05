@@ -1167,9 +1167,7 @@
 }
 
 main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
 }
 
 .wrapper {
@@ -1202,9 +1200,6 @@ main {
   margin: 15px 0px;
 }
 
-section {
-  margin-left: 100px;
-}
 section .wrapper-2 {
   margin-top: 20px;
   margin: 20px 0px;
