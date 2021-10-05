@@ -9,11 +9,14 @@ $offer_font-style: normal;
     &__block {
         background-color: #DAE3F0;
         max-width: 1240px;
-        margin: 25px auto 0;
+        margin: 0 auto 0;
+        
 
         &__yesno {
             display: flex;
             align-items: center;
+            margin: 20px 20px;
+            padding: 20px 20px;
         }
 
         h2 {
@@ -26,11 +29,13 @@ $offer_font-style: normal;
             font-weight: $offer_font-weight_700;
             font-size: 30px;
 
-            background-color: #B490AC;
+            background-color: #974e87;
             color: #fff;
             border: 0;
             padding: 7px 54px;
             border-radius: 10px;
+            margin-right: 30px;
+            margin-left: 30px;
             cursor: pointer;
         }
 
@@ -52,39 +57,128 @@ $offer_font-style: normal;
                 font-family: $offer_font-family;
                 font-size: 20px;
                 font-weight: $offer_font-weight_400;
+                margin-left: 30px;
+                margin-bottom: 20px;
         }
 
         &__form {
             max-width: 1200px;
-            margin: 0 auto;
+            margin: 0, auto;
 
             &__labels {
                 font-family: $offer_font-family;
-                font-weight: $offer_font-weight_400;
+                font-weight: $offer_font-weight_700;
                 font-style: $offer_font-style;
                 font-size: 20px;
+                margin-left: 30px;
                 border: 0;
-
-
-                // width: 1200px;
-                // height: 100px;
-                // border: 1px solid #54274A;
-                // outline: none;
-                // padding: 0;
-                // margin: 10px 0 35px 0;
-                // padding: 0 0 0 20px;
-                // font-size: 18px;
             }
             
-            // &__author {
-            //     position: absolute;
-            //     left: 747px;
-            //     top: 149px;
-            //     border: 0;
-            //     background-color: #000;
-            //     outline: none;
-            // }
+            &__author {
+                width: 1000px;
+                height: 30px;
+                border: 1px solid #54274A;
+                outline: none;
+                padding: 0;
+                margin: 10px 0 35px 0;
+                padding: 0 0 0 20px;
+                font-size: 18px
+            }
+
+            &__theme {
+                width: 1000px;
+                height: 30px;
+                border: 1px solid #54274A;
+                outline: none;
+                padding: 0;
+                margin: 10px 0 35px 0;
+                padding: 0 0 0 20px;
+                font-size: 18px
+            }
+
+            &__category {
+                position: relative;
+                width: 1000px;
+                height: 30px;
+                border: 1px solid #54274A;
+                outline: none;
+                padding: 0;
+                margin: 10px 0 35px 0;
+                padding: 0 0 0 20px;
+                font-size: 18px;
+                z-index: 1;
+            }
+
+            &__category-sel {
+                border: 0;
+                background-color: none;
+                position: absolute;
+                // left: 50px;
+                // top: 30px;
+                right: 1200px;
+                z-index: 0;
+            }
+
+            &__address {
+                width: 1000px;
+                height: 30px;
+                border: 1px solid #54274A;
+                outline: none;
+                padding: 0;
+                margin: 10px 0 35px 0;
+                padding: 20px 0 0 20px;
+                font-size: 18px
+            }
+
+            &__text {
+                width: 1000px;
+                height: 300px;
+                border: 1px solid #54274A;
+                outline: none;
+                padding: 0;
+                margin: 10px 0 35px 0;
+                padding: 0 0 0 20px;
+                font-size: 18px
+            }
+
+            &__audio {
+                width: 1000px;
+                height: 30px;
+                border: 1px solid #54274A;
+                outline: none;
+                padding: 0;
+                margin: 10px 0 35px 0;
+                padding: 0 0 0 20px;
+                font-size: 18px
+            }
+
+            &__video-block {
+                display: flex;
+                margin: 50px;
+                
+            }
+
+            &__video-text {
+                width: 1200px;
+                margin-right: 50px;
+            }
+
+
+            &__solution {
+                width: 1000px;
+                height: 30px;
+                border: 1px solid #54274A;
+                outline: none;
+                padding: 0;
+                margin: 10px 0 35px 0;
+                padding: 0 0 0 20px;
+                font-size: 18px
+            }
+
         }
+
+
+
     }
 }
 
