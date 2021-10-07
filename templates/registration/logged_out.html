@@ -26,21 +26,22 @@
                 </div>
 
                 <div class="entrance__inside-blocks__form">
-                    <h5 class="entrance__inside-blocks__form__heading-text">У вас нет аккаунта? <a href="#">Зарегистрироваться</a></h5>
+                    <h5 class="entrance__inside-blocks__form__heading-text">Благодарим вас за время, проведенное на этом сайте.</h5>
 
                     <div class="entrance__inside-blocks__form__block-form">
+                        <h3 class="entrance__inside-blocks__form__block-form__heading-text-style">Снова войти в ЭлБилет.</h3>
+
                         {% if form.errors %}
-                        <h3 class="entrance__inside-blocks__form__block-form__heading-text-style">Email и пароль не совпадают</h3>
+                          Your username and password didn't match. Please try again.
                         {% endif %}
 
                         {% if next %}
                           {% if user.is_authenticated %}
-                          <h3 class="entrance__inside-blocks__form__block-form__heading-text-style">У вашей учетной записи нет доступа к этой странице. Чтобы продолжить, войдите в систему с учетной записью, у которой есть доступ.</h3>
+                            Your account doesn't have access to this page. To proceed,
+                            please login with an account that has access.
                           {% else %}
-                            <h3 class="entrance__inside-blocks__form__block-form__heading-text-style">Войти в ЭлБилет</h3>
+                            Please login to see this page.
                           {% endif %}
-                        {% else %}
-                          <h3 class="entrance__inside-blocks__form__block-form__heading-text-style">Войти в ЭлБилет</h3>
                         {% endif %}
 
 

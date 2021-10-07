@@ -29,36 +29,36 @@
                     <h5 class="entrance__inside-blocks__form__heading-text">У вас нет аккаунта? <a href="#">Зарегистрироваться</a></h5>
 
                     <div class="entrance__inside-blocks__form__block-form">
+                        <h3 class="entrance__inside-blocks__form__block-form__heading-text-style">Войти в ЭлБилет</h3>
+
                         {% if form.errors %}
-                        <h3 class="entrance__inside-blocks__form__block-form__heading-text-style">Email и пароль не совпадают</h3>
+                          Your username and password didn't match. Please try again.
                         {% endif %}
 
                         {% if next %}
                           {% if user.is_authenticated %}
-                          <h3 class="entrance__inside-blocks__form__block-form__heading-text-style">У вашей учетной записи нет доступа к этой странице. Чтобы продолжить, войдите в систему с учетной записью, у которой есть доступ.</h3>
+                            Your account doesn't have access to this page. To proceed,
+                            please login with an account that has access.
                           {% else %}
-                            <h3 class="entrance__inside-blocks__form__block-form__heading-text-style">Войти в ЭлБилет</h3>
+                            Please login to see this page.
                           {% endif %}
-                        {% else %}
-                          <h3 class="entrance__inside-blocks__form__block-form__heading-text-style">Войти в ЭлБилет</h3>
                         {% endif %}
 
 
                           <form method="post" action="{% url 'login' %}">
                                 {% csrf_token %}
-
-                                {{ form.as_p }}
-
-                            <!--
                             <label for="email" class="entrance__inside-blocks__form__block-form__text-style">Электронная почта или имя пользователя</label><br>
+                            <input type="email" name="email" class="entrance__inside-blocks__form__block-form__style-input-email"><br>
+
                             <label for="userPassword" class="entrance__inside-blocks__form__block-form__text-style">Пароль</label><br>
-                            -->
+                            <input type="password" name="password" autocomplete="current-password" class="entrance__inside-blocks__form__block-form__style-input-password"><br>
+
                             <button type="submit" class="entrance__inside-blocks__form__block-form__btn-login">Логин</button>
                         </form>
                     </div>
 
                     <div class="entrance__inside-blocks__form__password-survey-results">
-                      <a href="#">Забыли пароль?</a>
+                        <a href="{% url 'password_reset' %}">Забыли пароль?</a>
 
                         <a href="#">Опрос</a>
 
