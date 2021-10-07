@@ -135,11 +135,12 @@ $offer_font-style: normal;
             }
 
             &__text {
-                max-width: 1000px;
-                max-height: 300px;
+                max-width: 2000px;
+                max-height: 200px;
+                // resize: none;
                 border: 1px solid #54274A;
                 outline: none;
-                margin: 5px 100px 25px 220px;
+                margin: 5px 0px 25px 120px;
                 font-size: 16px;
             }
 
@@ -154,29 +155,40 @@ $offer_font-style: normal;
             }
 
             &__video {
-                width: 800px;
-                height: 200px;
+                width: 500px;
+                height: 160px;
                 border: 2px solid #54274A;
                 outline: none;
                 padding: 0;
-                margin: 5px 0 10px 0;
+                margin: 5px 80px 25px 20px;
                 font-size: 20px;
             }
 
             &__video + &__video {
-                margin-left: 25px;
+                margin-left: 10px;
             }
 
 
             &__video-block {
                 display: flex;
                 margin-left: 120px;
-                
             }
 
             &__video-text {
                 width: 1000px;
-                margin-right: 50px;
+                margin-right: 0 auto;
+                
+                &__video-text1 {
+                    font-family: $offer_font-family;
+                    font-weight: $offer_font-weight_400;
+                    font-style: $offer_font-style;
+                    font-size: 15px;
+                
+                    max-width: 50px;
+                    text-align: left;
+                    margin: 10px auto 10px;
+                    color: #000;
+                }
             }
 
 
@@ -222,9 +234,9 @@ $offer_font-style: normal;
     
         max-width: 862px;
         text-align: center;
-        margin: 15px auto 65px;
+        margin: 20px auto;
         color: #000;
-    
+           
         a {
             text-decoration: none;
             color: #54274A;
