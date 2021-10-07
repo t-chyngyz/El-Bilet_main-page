@@ -1,12 +1,11 @@
 @import 'vars';   
 .container-2{
-     margin: 100px;
+        margin: 0px 0px 0px 100px;
 
 
 .container-2__fluid{
-//max-width: 1440px;
  margin: 0 auto;
- 
+
 
 .card__header h2{
     
@@ -15,10 +14,38 @@
     padding-bottom: 10px;
     padding-right: 10px;
     padding-left: 10px;
-    width: 1440px;
+    width: 1140px;
     margin-top: 20px;
     margin-bottom: 20px;
+
         }
+       
     
+}
+// @media (min-width:576px) {
+//     .container {
+//      max-width:540px;
+//     }
+//    }
+//    @media (min-width:768px) {
+//     .container {
+//      max-width:720px;
+//     }
+//    }
+//    @media (min-width:992px) {
+//     .container {
+//      max-width:960px;
+//     }
+//    }
+//    @media (min-width:1200px) {
+//     .container {
+//      max-width:1140px;
+//     }
+//    }
+
+
+p .text-bottom{
+        font-family: $third-font;
+      margin: 30px;  
 }
 }
