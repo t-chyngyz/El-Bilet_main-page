@@ -10,6 +10,7 @@ $survey__color-text__pink: #B490AC;
 
 .survey {
     display: flex;
+    margin: 150px 100px 132px 100px;
 
     img {
         width: 295px;
@@ -33,8 +34,7 @@ $survey__color-text__pink: #B490AC;
             font-style: $npa__font-style;
             font-size: 24px;
             color: $npa__color-text__black;
-    
-            max-width: 924px;
+
             margin: 14px 0 38px 0;
         }
     

@@ -10,6 +10,7 @@ $project__color-text__pink: #B490AC;
 
 .project {
     display: flex;
+    margin: 0 100px 0 100px;
 
     img {
         width: 298.5px;
@@ -34,7 +35,6 @@ $project__color-text__pink: #B490AC;
             font-size: 24px;
             color: $npa__color-text__black;
     
-            max-width: 950px;
             margin: 14px 0 38px 0;
         }
     

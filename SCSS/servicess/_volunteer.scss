@@ -10,6 +10,7 @@ $volunteer__color-text__pink: #B490AC;
 
 .volunteer {
     display: flex;
+    margin: 151px 100px 146px 100px;
 
     img {
         width: 295px;
@@ -33,8 +34,7 @@ $volunteer__color-text__pink: #B490AC;
             font-style: $npa__font-style;
             font-size: 24px;
             color: $npa__color-text__black;
-    
-            max-width: 921px;
+            
             margin: 14px 0 47px 0;
         }
 

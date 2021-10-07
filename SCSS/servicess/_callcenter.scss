@@ -10,6 +10,7 @@ $callcenter__color-text__pink: #B490AC;
 
 .callcenter {
     display: flex;
+    margin: 150px 100px 130px 100px;
 
     img {
         width: 295px;
@@ -34,7 +35,6 @@ $callcenter__color-text__pink: #B490AC;
             font-size: 24px;
             color: $npa__color-text__black;
     
-            max-width: 924px;
             margin: 14px 0 23px 0;
         }
     

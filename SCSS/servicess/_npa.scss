@@ -10,6 +10,7 @@ $npa__color-text__pink: #B490AC;
 
 .npa {
     display: flex;
+    margin: 67px 100px 0 100px;
 
     img {
         width: 295px;
@@ -33,8 +34,7 @@ $npa__color-text__pink: #B490AC;
             font-style: $npa__font-style;
             font-size: 24px;
             color: $npa__color-text__black;
-    
-            max-width: 921px;
+
             margin: 14px 0 38px 0;
         }
     
