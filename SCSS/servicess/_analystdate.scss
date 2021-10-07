@@ -1,18 +1,18 @@
-$project__font-family: 'Montserrat Alternates',
+$analysdate__font-family: 'Montserrat Alternates',
 sans-serif;
-$project__font-weight__500: 500;
-$project__font-weight__400: 400;
-$project__font-weight__600: 600;
-$project__font-style: normal;
-$project__color-text__black: #000;
-$project__color-text__white: #FFF;
-$project__color-text__pink: #B490AC;
+$analysdate__font-weight__500: 500;
+$analysdate__font-weight__400: 400;
+$analysdate__font-weight__600: 600;
+$analysdate__font-style: normal;
+$analysdate__color-text__black: #000;
+$analysdate__color-text__white: #FFF;
+$analysdate__color-text__pink: #B490AC;
 
-.project {
+.analystdate {
     display: flex;
 
     img {
-        width: 298.5px;
+        width: 295px;
         height: 244px;
     }
 
@@ -34,8 +34,8 @@ $project__color-text__pink: #B490AC;
             font-size: 24px;
             color: $npa__color-text__black;
     
-            max-width: 950px;
-            margin: 14px 0 38px 0;
+            max-width: 924px;
+            margin: 14px 0 66px 0;
         }
     
         &__link {
