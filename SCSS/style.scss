@@ -1,10 +1,29 @@
+// MAIN_PAGES-ERBOL
+@import "main/topscreen";
+@import "main/appeal";
+@import "main/offer";
+@import "main/services";
+@import "main/results";
+
+// ALL_PAGES
 @import "header";
-@import "topscreen";
-@import "appeal";
-@import "offer";
-@import "services";
-@import "results";
 @import "footer";
+
+// REGISTRATION_PAGES-ERBOL 
+@import "registration/registration";
+@import "registration2/registration2";
+
+// ENTRANCE_PAGES-ERBOL 
+@import "entrance/entrance";
+
+//announcement_pages-burul
+@import "announcement/announcement";
+@import "announcement/section";
+@import "announcement/vars";
+
+// OFFER_PAGES-INDIRA
+@import "offer/offer";
+
 
 *,
 *::after,
