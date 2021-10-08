@@ -1,0 +1,56 @@
+$project__font-family: 'Montserrat Alternates',
+sans-serif;
+$project__font-weight__500: 500;
+$project__font-weight__400: 400;
+$project__font-weight__600: 600;
+$project__font-style: normal;
+$project__color-text__black: #000;
+$project__color-text__white: #FFF;
+$project__color-text__pink: #B490AC;
+
+.project {
+    display: flex;
+    margin: 0 100px 0 100px;
+
+    img {
+        width: 298.5px;
+        height: 244px;
+    }
+
+    &__block {
+        margin: 0 0 0 20px;
+
+        &__heading-text {
+            font-family: $npa__font-family;
+            font-weight: $npa__font-weight__500;
+            font-style: $npa__font-style;
+            font-size: 24px;
+            color: $npa__color-text__black;
+        }
+    
+        &__paragraph-text {
+            font-family: $npa__font-family;
+            font-weight: $npa__font-weight__400;
+            font-style: $npa__font-style;
+            font-size: 24px;
+            color: $npa__color-text__black;
+    
+            margin: 14px 0 38px 0;
+        }
+    
+        &__link {
+            font-family: $npa__font-family;
+            font-weight: $npa__font-weight__600;
+            font-style: $npa__font-style;
+            font-size: 24px;
+    
+            padding: 18px 48px 18px 48px;
+            border-radius: 12px;
+            border: 1px solid #000;
+    
+            text-decoration: none;
+            color: $npa__color-text__white;
+            background-color: $npa__color-text__pink;
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.about {
+  text-align: center;
+  &__container {
+    width: 987px;
+    margin: auto;
+    padding: 0 14px;
+  }
+
+  &__items-title {
+    font-family: Montserrat Alternates;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 29px;
+    text-align: center;
+    color: #000000;
+    margin: 26px 0 46px;
+  }
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+  }
+  &__items-paragraph {
+    font-family: Montserrat Alternates;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #000000;
+  }
+  &__items {
+    width: 294px;
+    height: 439px;
+    background: #dae3f0;
+    border: 1px solid #c7c7c7;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(4px);
+    padding: 16px;
+    overflow: hidden;
+    margin: 0;
+  }
+  &__img {
+    width: 191px;
+    height: 191px;
+    border-radius: 100%;
+  }
+
+  &__items:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+}
