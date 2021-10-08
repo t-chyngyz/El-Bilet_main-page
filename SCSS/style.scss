@@ -11,10 +11,18 @@
 
 // REGISTRATION_PAGES-ERBOL 
 @import "registration/registration";
-@import "registration2/registration2";
 
 // ENTRANCE_PAGES-ERBOL 
 @import "entrance/entrance";
+
+// SERVICES_PAGE-ERBOL
+@import "servicess/npa";
+@import "servicess/volunteer";
+@import "servicess/project";
+@import "servicess/survey";
+@import "servicess/analystdate";
+@import "servicess/callcenter";
+@import "servicess/rating";
 
 //announcement_pages-burul
 @import "announcement/announcement";
