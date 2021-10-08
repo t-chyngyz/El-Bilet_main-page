@@ -1,24 +1,58 @@
 @import 'vars';   
 .container-2{
-     margin: 100px;
+        margin: 0px 0px 0px 100px;
 
 
 .container-2__fluid{
-//max-width: 1440px;
  margin: 0 auto;
- 
 
-.card__header h2{
+
+.card__header {
     
             border: 1px solid black;
-    padding-top: 5px;
+    padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 10px;
     padding-left: 10px;
-    width: 1440px;
+    width: 1140px;
     margin-top: 20px;
     margin-bottom: 20px;
+
+
+
+    .h2-plus{
+            margin-left: 900px;
+           
+    }
         }
+       
     
+}
+// @media (min-width:576px) {
+//     .container {
+//      max-width:540px;
+//     }
+//    }
+//    @media (min-width:768px) {
+//     .container {
+//      max-width:720px;
+//     }
+//    }
+//    @media (min-width:992px) {
+//     .container {
+//      max-width:960px;
+//     }
+//    }
+//    @media (min-width:1200px) {
+//     .container {
+//      max-width:1140px;
+//     }
+//    }
+
+
+ .text-bottom{
+      font-family: $third-font;
+      margin: 30px 0px 30px 0px;  
+      
 }
 }
