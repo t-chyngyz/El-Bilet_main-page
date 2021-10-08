@@ -11,18 +11,33 @@
 
 // REGISTRATION_PAGES-ERBOL 
 @import "registration/registration";
-@import "registration2/registration2";
 
 // ENTRANCE_PAGES-ERBOL 
 @import "entrance/entrance";
+
+// SERVICES_PAGE-ERBOL
+@import "servicess/npa";
+@import "servicess/volunteer";
+@import "servicess/project";
+@import "servicess/survey";
+@import "servicess/analystdate";
+@import "servicess/callcenter";
+@import "servicess/rating";
 
 //announcement_pages-burul
 @import "announcement/announcement";
 @import "announcement/section";
 @import "announcement/vars";
 
+
 // OFFER_PAGES-INDIRA
 @import "offer/offer";
+
+// contacts_pages_burul
+@import "contacts/container-2";
+@import "contacts/container";
+@import "contacts/topscreen";
+@import "contacts/vars";
 
 
 *,
@@ -30,4 +45,5 @@
 *::before {
     margin: 0;
     box-sizing: border-box;
+    
 }
