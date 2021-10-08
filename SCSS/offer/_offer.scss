@@ -61,7 +61,7 @@ $offer_font-style: normal;
         
         &__text {
                 font-family: $offer_font-family;
-                font-size: 15px;
+                font-size: 18px;
                 font-weight: $offer_font-weight_500;
                 margin-left: 120px;
                 margin-bottom: 20px;
@@ -83,33 +83,36 @@ $offer_font-style: normal;
             
             &__author {
                 width: 1000px;
-                height: 45px;
+                height: 58px;
                 border: 1px solid #54274A;
                 outline: none;
                 padding: 0;
                 margin: 5px 0 25px 120px;
                 font-size: 20px;
+                padding-left: 20px;
             }
 
             &__theme {
                 width: 1000px;
-                height: 45px;
+                height: 58px;
                 border: 1px solid #54274A;
                 outline: none;
                 padding: 0;
                 margin: 5px 0 25px 120px;
                 font-size: 20px;
+                padding-left: 20px;
             }
 
             &__category {
                 position: relative;
                 width: 1000px;
-                height: 45px;
+                height: 58px;
                 border: 1px solid #54274A;
                 outline: none;
                 padding: 0;
                 margin: 5px 0 25px 120px;
                 font-size: 20px;
+                padding-left: 20px;
                 // z-index: 1;
             }
 
@@ -117,31 +120,34 @@ $offer_font-style: normal;
                 border: 0;
                 background-color: none;
                 position: absolute;
-                left: 1100px;
-                top: 580px;
+                left: 1170px;
+                top: 570px;
                 outline: none;
+                
                 // right: 1200px;
                 // z-index: 0;
             }
 
             &__address {
                 width: 1000px;
-                height: 45px;
+                height: 58px;
                 border: 1px solid #54274A;
                 outline: none;
                 padding: 0;
                 margin: 5px 0 25px 120px;
                 font-size: 20px;
+                padding-left: 20px;
             }
 
             &__text {
-                max-width: 2000px;
+                max-width: 1000px;
                 max-height: 200px;
                 // resize: none;
                 border: 1px solid #54274A;
                 outline: none;
                 margin: 5px 0px 25px 120px;
-                font-size: 16px;
+                font-size: 20px;
+                padding-left: 20px;
             }
 
             &__audio {
@@ -194,12 +200,13 @@ $offer_font-style: normal;
 
             &__solution {
                 width: 1000px;
-                height: 45px;
+                height: 58px;
                 border: 1px solid #54274A;
                 outline: none;
                 padding: 0;
                 margin: 5px 0 25px 120px;
                 font-size: 20px;
+                padding-left: 20px;
             }
 
             &__buttons {
