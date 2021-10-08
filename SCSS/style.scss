@@ -9,10 +9,10 @@
 @import "header";
 @import "footer";
 
-// REGISTRATION_PAGES-ERBOL 
+// REGISTRATION_PAGES-ERBOL
 @import "registration/registration";
 
-// ENTRANCE_PAGES-ERBOL 
+// ENTRANCE_PAGES-ERBOL
 @import "entrance/entrance";
 
 // SERVICES_PAGE-ERBOL
@@ -29,7 +29,6 @@
 @import "announcement/section";
 @import "announcement/vars";
 
-
 // OFFER_PAGES-INDIRA
 @import "offer/offer";
 
@@ -39,11 +38,14 @@
 @import "contacts/topscreen1burul";
 @import "contacts/vars";
 
+//Abou Us MOLDOGAZY
+@import "aboutus/about";
+@import "aboutus/container-MOLDOGAZY";
+@import "aboutus/missionVision";
 
 *,
 *::after,
 *::before {
-    margin: 0;
-    box-sizing: border-box;
-    
+  margin: 0;
+  box-sizing: border-box;
 }

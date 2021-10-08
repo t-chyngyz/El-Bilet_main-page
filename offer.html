@@ -65,16 +65,16 @@
                 </div>
             
             <form action="#" class="offer__block__form">
-                <label for="author" class="offer__block__form__labels">Автор<span class="redstar">*</span></label>
+                <label for="author" class="offer__block__form__labels">Автор<span class="redstar">*</span></label><br>
                 <input type="author" class="offer__block__form__author">
                 <br>
 
 
-                <label for="theme" class="offer__block__form__labels">Тема<span class="redstar">*</span></label>
+                <label for="theme" class="offer__block__form__labels">Тема<span class="redstar">*</span></label><br>
                 <input type="theme" name="theme" class="offer__block__form__theme">
                 <br>
 
-                <label for="category" сlass="offer__block__form__labels">Категория<span class="redstar">*</span></label>
+                <label for="theme" class="offer__block__form__labels">Категория<span class="redstar">*</span></label><br>
                 <input type="category" name="category" class="offer__block__form__category">
                 <select name="category" class="offer__block__form__category-sel">
                     <option value=""></option>
@@ -84,7 +84,7 @@
                 <br>
 
                 <label for="address" class="offer__block__form__labels">Адрес, по которому у вас имеются обращения<span class="redstar">*</span></label><br>
-                <input type="address" name="address" class="offer__block__address">
+                <input type="address" name="address" class="offer__block__form__address">
                 <br>
 
                 <label for="text" class="offer__block__form__labels">Текст обращения<span class="redstar">*</span></label><br>
@@ -95,25 +95,30 @@
                 <input type="audio" name="audio" class="offer__block__form__audio">
                 <br>
 
+                <div class="offer__block__form__video-block">
+                <div class="offer__block__form__video-text">
                 <label for="video" class="offer__block__form__labels">Фото/Видео</label><br>
-                <p>Размер фото не более 500кб</p>
-                <p>Размер видео не более 1MB</p>
-                <input type="video" name="video" class="offer__block__form__video">
-                <input type="video" name="video" class="offer__block__form__video">
-                <input type="video" name="video" class="offer__block__form__video">
+                <p class="offer__block__form__video-text1">Размер фото не более 500кб</p>
+                <p class="offer__block__form__video-text1">Размер видео не более 1MB</p> 
+                </div>
+                
+                <input type="file" name="video" class="offer__block__form__video">
+                <input type="file" name="video" class="offer__block__form__video">
+                <input type="file" name="video" class="offer__block__form__video">
+                </div>
                 <br>
 
                 <label for="solution" class="offer__block__form__labels">Ваше предложение/видение по решению данного вопроса</label><br>
                 <input type="solution" name="solution" class="offer__block__form__solution">
                 <br>
 
-                <div class="offer__block__form__button">
+                <div class="offer__block__form__buttons">
                     <button type="submit">Отправить</button>
                 </div>
                 </form>
             </div>
 
-            <p>У вас есть вопросы при заполнении формы обращения? Пожалуйста,напишите нам по электроной почте: <a href="#">elbiletkg@elbilet.com</a></p>
+            <p>У вас есть вопросы при заполнении формы предложения? <br>Пожалуйста, напишите нам по электроной почте: <a href="#">elbiletkg@elbilet.com</a></p>
         </section>
     </main>
 
