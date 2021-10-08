@@ -39,6 +39,42 @@ $header_text-color: #FFFFFF;
 
             li {
                 list-style: none;
+
+                &:hover > ul {
+                    display: block;
+                }
+
+                ul {
+                    display: none;
+                    position: absolute;
+                    right: 360px;
+
+                    background-color: #DAE3F0;
+                    border: 1px solid #000;
+                    width: 220px;
+                    padding: 6px 14px 12px 14px;
+
+                    li {
+
+                        a {
+                            text-decoration: none;
+                            color: #000;
+
+                            font-family: $header_font-family;
+                            font-weight: $header_font-weight;
+                            font-style: $header_font-style;
+                            font-size: 11px;
+
+                            &:hover {
+                                font-weight: 500;
+                            }
+                        }
+                    }
+
+                    li + li {
+                        margin-top: 15px;
+                    }
+                }
             }
         }
 
@@ -49,6 +85,7 @@ $header_text-color: #FFFFFF;
 
             &:hover {
                 color: #B490AC;
+                font-weight: 700;
             }
         }
 
@@ -60,17 +97,7 @@ $header_text-color: #FFFFFF;
 
             &:hover {
                 color: #B490AC;
-            }
-        }
-
-        &__link-polls {
-            text-decoration: none;
-            color: $header_text-color;
-            border-radius: 8px;
-            margin-left: 30px;
-
-            &:hover {
-                color: #B490AC;
+                font-weight: 700;
             }
         }
 
@@ -82,6 +109,7 @@ $header_text-color: #FFFFFF;
 
             &:hover {
                 color: #B490AC;
+                font-weight: 700;
             }
         }
 
@@ -93,6 +121,7 @@ $header_text-color: #FFFFFF;
 
             &:hover {
                 color: #B490AC;
+                font-weight: 700;
             }
         }
     }
