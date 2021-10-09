@@ -1,11 +1,11 @@
-$offer_font-family: 'Roboto', sans-serif;
-$offer_font-weight_400: 400;
-$offer_font-weight_500: 500;
-$offer_font-weight_700: 700;
-$offer_font-style: normal;
+$appeal_font-family: 'Roboto', sans-serif;
+$appeal_font-weight_400: 400;
+$appeal_font-weight_500: 500;
+$appeal_font-weight_700: 700;
+$appeal_font-style: normal;
 
 
-.offer {
+.appeal {
 
     &__block {
         background-color: #DAE3F0;
@@ -21,16 +21,16 @@ $offer_font-style: normal;
         }
 
         h2 {
-            font-family: $offer_font-family;
-            font-style: $offer_font-style;
-            font-weight: $offer_font-weight_700;
+            font-family: $appeal_font-family;
+            font-style: $appeal_font-style;
+            font-weight: $appeal_font-weight_700;
             font-size: 26px;
         }
 
         &__yesno-yeslink {
-            font-family: $offer_font-family;
-            font-style: $offer_font-style;
-            font-weight: $offer_font-weight_700;
+            font-family: $appeal_font-family;
+            font-style: $appeal_font-style;
+            font-weight: $appeal_font-weight_700;
             font-size: 25px;
             text-decoration: none;
 
@@ -45,9 +45,9 @@ $offer_font-style: normal;
         }
 
         &__yesno-nolink {
-            font-family: $offer_font-family;
-            font-style: $offer_font-style;
-            font-weight: $offer_font-weight_700;
+            font-family: $appeal_font-family;
+            font-style: $appeal_font-style;
+            font-weight: $appeal_font-weight_700;
             font-size: 25px;
             text-decoration: none;
 
@@ -60,9 +60,9 @@ $offer_font-style: normal;
         }
         
         &__text {
-                font-family: $offer_font-family;
+                font-family: $appeal_font-family;
                 font-size: 18px;
-                font-weight: $offer_font-weight_500;
+                font-weight: $appeal_font-weight_500;
                 margin-left: 120px;
                 margin-bottom: 20px;
         }
@@ -73,9 +73,9 @@ $offer_font-style: normal;
                    
             
             &__labels {
-                font-family: $offer_font-family;
-                font-weight: $offer_font-weight_500;
-                font-style: $offer_font-style;
+                font-family: $appeal_font-family;
+                font-weight: $appeal_font-weight_500;
+                font-style: $appeal_font-style;
                 font-size: 20px;
                 margin-left: 120px;
                 border: 0;
@@ -120,8 +120,8 @@ $offer_font-style: normal;
                 border: 0;
                 background-color: none;
                 position: absolute;
-                left: 1170px;
-                top: 570px;
+                left: 1300px;
+                top: 540px;
                 outline: none;
                 
                 // right: 1200px;
@@ -158,8 +158,9 @@ $offer_font-style: normal;
                 padding: 0;
                 margin: 5px 0 25px 120px;
                 font-size: 20px;
+            }
 
-              &__video {
+            &__video {
                 width: 500px;
                 height: 160px;
                 border: 2px solid #54274A;
@@ -173,6 +174,7 @@ $offer_font-style: normal;
                 margin-left: 10px;
             }
 
+
             &__video-block {
                 display: flex;
                 margin-left: 120px;
@@ -183,9 +185,9 @@ $offer_font-style: normal;
                 margin-right: 0 auto;
                 
                 &__video-text1 {
-                    font-family: $offer_font-family;
-                    font-weight: $offer_font-weight_400;
-                    font-style: $offer_font-style;
+                    font-family: $appeal_font-family;
+                    font-weight: $appeal_font-weight_400;
+                    font-style: $appeal_font-style;
                     font-size: 15px;
                 
                     max-width: 50px;
@@ -212,9 +214,9 @@ $offer_font-style: normal;
                 justify-content: center;
     
                 button {
-                    font-family: $offer_font-family;
-                    font-weight: $offer_font-weight_500;
-                    font-style: $offer_font-style;
+                    font-family: $appeal_font-family;
+                    font-weight: $appeal_font-weight_500;
+                    font-style: $appeal_font-style;
                     font-size: 20px;
     
                     background-color: #B490AC;
@@ -232,9 +234,9 @@ $offer_font-style: normal;
     }
 
     p {
-        font-family: $offer_font-family;
-        font-weight: $offer_font-weight_400;
-        font-style: $offer_font-style;
+        font-family: $appeal_font-family;
+        font-weight: $appeal_font-weight_400;
+        font-style: $appeal_font-style;
         font-size: 24px;
     
         max-width: 862px;
@@ -252,3 +254,4 @@ $offer_font-style: normal;
 .redstar {
     color: red;
 }
+

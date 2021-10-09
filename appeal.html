@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,14 +8,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;700;800&display=swap"
         rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/style.min.css">
-    <title>Регистрация</title>
+    <title>Appeal</title>
 </head>
-
 <body>
+    
     <header class="header">
         <div class="header__inner-line">
             <div class="header__logo">
@@ -54,67 +51,73 @@
     </header>
 
     <main>
-        <section class="registration">
-            <div class="registration__block">
+        <section class="appeal">
+            <div class="appeal__block">
+                <div class="appeal__block__yesno">
+                    <h2 class="appeal__block__yesno-text">Вы зарегистрированы?</h2>
+                    <a href="№" class="appeal__block__yesno-yeslink">Да</a>
+                    <a href="№" class="appeal__block__yesno-nolink">Нет</a>
+                </div>
 
-                <form action="#" class="registration__block__form">
-                    <label for="username" class="registration__block__labels">Имя</label><br>
-                    <input type="username" name="username" class="registration__block__input-username"><br>
+                <div class="appeal__block__text">
+                    Поля, отмеченные <span class="redstar">*</span>, обязательны для заполнения
+                </div>
+            
+            <form action="#" class="appeal__block__form">
+                <label for="author" class="appeal__block__form__labels">Автор<span class="redstar">*</span></label><br>
+                <input type="author" class="appeal__block__form__author">
+                <br>
 
-                    <label for="lastname" class="registration__block__labels">Фамилия</label><br>
-                    <input type="lastname" name="lastname" class="registration__block__input-lastname"><br>
 
-                    <label for="email" class="registration__block__labels">Электронная почта</label><br>
-                    <input type="email" name="email" class="registration__block__input-email"><br>
+                <label for="theme" class="appeal__block__form__labels">Тема<span class="redstar">*</span></label><br>
+                <input type="theme" name="theme" class="appeal__block__form__theme">
+                <br>
 
-                    <label for="password" class="registration__block__labels">Пороль</label><br>
-                    <input type="password" name="password" class="registration__block__input-password"><br>
+                <label for="theme" class="appeal__block__form__labels">Категория<span class="redstar">*</span></label><br>
+                <input type="category" name="category" class="appeal__block__form__category">
+                <select name="category" class="appeal__block__form__category-sel">
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
+                <br>
 
-                    <label for="password" class="registration__block__labels">Подтвердить пороль</label><br>
-                    <input type="password" name="password" class="registration__block__input-password"><br>
+                <label for="address" class="appeal__block__form__labels">Адрес, по которому у вас имеются обращения<span class="redstar">*</span></label><br>
+                <input type="address" name="address" class="appeal__block__form__address">
+                <br>
 
-                    <label for="country" class="registration__block__labels">Страна</label><br>
-                    <input type="country" name="country" class="registration__block__input-country">
-                    <select name="country" class="registration__block__country">
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                    </select><br>
+                <label for="text" class="appeal__block__form__labels">Текст обращения<span class="redstar">*</span></label><br>
+                <textarea class="appeal__block__form__text" name="text" id="text" cols="100" rows="20"></textarea>
+                <br>
 
-                    <label for="date" class="registration__block__labels">Дата рождения</label><br>
-                    <input type="date" name="date" class="registration__block__input-date">
+                <label for="audio" class="appeal__block__form__labels">Аудиообращение</label><br>
+                <input type="audio" name="audio" class="appeal__block__form__audio">
+                <br>
 
-                    <label for="region" class="registration__block__labels">Область/Регион</label><br>
-                    <input type="region" name="region" class="registration__block__input-rovince">
-                    <select name="region" class="registration__block__rovince">
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                    </select><br>
+                <div class="appeal__block__form__video-block">
+                <div class="appeal__block__form__video-text">
+                <label for="video" class="appeal__block__form__labels">Фото/Видео</label><br>
+                <p class="appeal__block__form__video-text1">Размер фото не более 500кб</p>
+                <p class="appeal__block__form__video-text1">Размер видео не более 1MB</p> 
+                </div>
+                
+                <input type="file" name="video" class="appeal__block__form__video">
+                <input type="file" name="video" class="appeal__block__form__video">
+                <input type="file" name="video" class="appeal__block__form__video">
+                </div>
+                <br>
 
-                    <label for="employment" class="registration__block__labels">Вид занятости</label><br>
-                    <input type="employment" name="employment" class="registration__block__input-employment">
-                    <select name="employment" class="registration__block__employment">
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                    </select><br>
-
-                    <div class="registration__block__checkbox-style">
-                        <input type="checkbox" class="registration__block__checkbox-style__checkbox-input">
-                        <label for="checkbox" class="registration__block__checkbox-style__checkbox-label">Своей регистрацией я потверждаю, что прочитал/a и принимаю политику конфиденциальности.</label>
-                    </div>
-
-                    <div class="registration__block__buttons">
-                        <button type="submit">Назад</button>
-                        <button type="submit">Дальше</button>
-                    </div>
+                
+                <div class="appeal__block__form__buttons">
+                    <button type="submit">Отправить</button>
+                </div>
                 </form>
-
-                <p>Проблемы или вопросы о регистрации? Пожалуйста ,напишите нам по электроной почте: <a href="#">singup@elbilet.com</a></p>
             </div>
+
+            <p>У вас есть вопросы при заполнении формы предложения? <br>Пожалуйста, напишите нам по электроной почте: <a href="#">elbiletkg@elbilet.com</a></p>
         </section>
     </main>
+
 
     <footer class="footer">
         <div class="footer__inside-blocks">
@@ -142,6 +145,6 @@
             </div>
         </div>
     </footer>
-</body>
 
+</body>
 </html>
