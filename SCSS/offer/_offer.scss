@@ -11,7 +11,7 @@ $offer_font-style: normal;
         background-color: #DAE3F0;
         max-width: 1240px;
         margin: 0 auto;
-
+        
 
         &__yesno {
             display: flex;
@@ -56,9 +56,9 @@ $offer_font-style: normal;
             border: 0;
             padding: 7px 54px;
             border-radius: 10px;
-            cursor: pointer;
+            cursor: pointer;           
         }
-
+        
         &__text {
                 font-family: $offer_font-family;
                 font-size: 18px;
@@ -70,8 +70,8 @@ $offer_font-style: normal;
         &__form {
             max-width: 1200px;
             margin: 0, auto;
-
-
+                   
+            
             &__labels {
                 font-family: $offer_font-family;
                 font-weight: $offer_font-weight_500;
@@ -80,7 +80,7 @@ $offer_font-style: normal;
                 margin-left: 120px;
                 border: 0;
             }
-
+            
             &__author {
                 width: 1000px;
                 height: 58px;
@@ -123,7 +123,7 @@ $offer_font-style: normal;
                 left: 1170px;
                 top: 570px;
                 outline: none;
-
+                
                 // right: 1200px;
                 // z-index: 0;
             }
@@ -183,13 +183,13 @@ $offer_font-style: normal;
             &__video-text {
                 width: 1000px;
                 margin-right: 0 auto;
-
+                
                 &__video-text1 {
                     font-family: $offer_font-family;
                     font-weight: $offer_font-weight_400;
                     font-style: $offer_font-style;
                     font-size: 15px;
-
+                
                     max-width: 50px;
                     text-align: left;
                     margin: 10px auto 10px;
@@ -212,13 +212,13 @@ $offer_font-style: normal;
             &__buttons {
                 display: flex;
                 justify-content: center;
-
+    
                 button {
                     font-family: $offer_font-family;
                     font-weight: $offer_font-weight_500;
                     font-style: $offer_font-style;
                     font-size: 20px;
-
+    
                     background-color: #B490AC;
                     color: #fff;
                     border: 0;
@@ -238,12 +238,12 @@ $offer_font-style: normal;
         font-weight: $offer_font-weight_400;
         font-style: $offer_font-style;
         font-size: 24px;
-
+    
         max-width: 862px;
         text-align: center;
         margin: 20px auto;
         color: #000;
-
+           
         a {
             text-decoration: none;
             color: #54274A;
