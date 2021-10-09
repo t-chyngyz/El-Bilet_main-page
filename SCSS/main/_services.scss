@@ -32,6 +32,10 @@ $services_color-white: #FFFFFF;
                 display: flex;
                 justify-content: space-between;
 
+                a {
+                    text-decoration: none;
+                }
+
                 &__roads {
                     background-color: $services_color-blue;
                     width: 354px;
@@ -58,7 +62,7 @@ $services_color-white: #FFFFFF;
                 &__education {
                     background-color: $services_color-blue;
                     width: 354px;
-                    padding: 41.73px 0 35.05px 0;
+                    padding: 41.73px 0 50.05px 0;
 
                     img {
                         width: 100px;
@@ -81,7 +85,7 @@ $services_color-white: #FFFFFF;
                 &__statesystem {
                     background-color: $services_color-blue;
                     width: 354px;
-                    padding: 33.78px 0 35.05px 0;
+                    padding: 33.78px 0 50.05px 0;
 
                     img {
                         width: 100px;
@@ -108,10 +112,14 @@ $services_color-white: #FFFFFF;
                 justify-content: space-between;
                 margin: 84.56px 0 0 0;
 
+                a {
+                    text-decoration: none;
+                }
+
                 &__medicine {
                     background-color: $services_color-blue;
                     width: 354px;
-                    padding: 21.4px 0 26px 0;
+                    padding: 24.5px 0 50.05px 0;
 
                     img {
                         width: 87.5px;
@@ -134,7 +142,7 @@ $services_color-white: #FFFFFF;
                 &__ecology {
                     background-color: $services_color-blue;
                     width: 354px;
-                    padding: 21.4px 0 35.05px 0;
+                    padding: 24.5px 0 47.05px 0;
 
                     img {
                         width: 100px;
@@ -157,7 +165,7 @@ $services_color-white: #FFFFFF;
                 &__nutrition {
                     background-color: $services_color-blue;
                     width: 354px;
-                    padding: 21.4px 0 35.05px 0;
+                    padding: 24.5px 0 47.05px 0;
 
                     img {
                         width: 104px;

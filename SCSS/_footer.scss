@@ -12,7 +12,7 @@ $footer_color-text: #FFFFFF;
         display: flex;
         justify-content: space-between;
         margin: 0 328px 0 404px;
-        padding: 35.91px 0 83px 0;
+        padding: 35px 0 35px 0;
 
         img {
             width: 255px;
@@ -42,7 +42,6 @@ $footer_color-text: #FFFFFF;
 
                 &:hover {
                     color: #B490AC;
-                    font-weight: 700;
                 }
             }
         }

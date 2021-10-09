@@ -1,6 +1,6 @@
 // MAIN_PAGES-ERBOL
 @import "main/topscreen";
-@import "main/appeal";
+@import "main/appeall";
 @import "main/offer";
 @import "main/services";
 @import "main/results";
@@ -25,9 +25,6 @@
 @import "servicess/rating";
 
 
-// OFFER_PAGES-INDIRA
-@import "offer/offer";
-
 // contacts_pages_burul
 @import "contacts/container-2";
 @import "contacts/container";
@@ -38,6 +35,9 @@
 @import "aboutus/about";
 @import "aboutus/container-MOLDOGAZY";
 @import "aboutus/missionVision";
+
+// OFFER_PAGES-INDIRA
+@import "offer/offer";
 
 // APPEAL_PAGES-INDIRA
 @import "appeal/appeal";
