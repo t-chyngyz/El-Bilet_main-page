@@ -1,4 +1,5 @@
-$offer_font-family: 'Roboto', sans-serif;
+$offer_font-family: 'Roboto',
+sans-serif;
 $offer_font-weight_400: 400;
 $offer_font-weight_500: 500;
 $offer_font-weight_700: 700;
@@ -11,7 +12,7 @@ $offer_font-style: normal;
         background-color: #DAE3F0;
         max-width: 1240px;
         margin: 0 auto;
-        
+
 
         &__yesno {
             display: flex;
@@ -56,22 +57,22 @@ $offer_font-style: normal;
             border: 0;
             padding: 7px 54px;
             border-radius: 10px;
-            cursor: pointer;           
+            cursor: pointer;
         }
-        
+
         &__text {
-                font-family: $offer_font-family;
-                font-size: 18px;
-                font-weight: $offer_font-weight_500;
-                margin-left: 120px;
-                margin-bottom: 20px;
+            font-family: $offer_font-family;
+            font-size: 18px;
+            font-weight: $offer_font-weight_500;
+            margin-left: 120px;
+            margin-bottom: 20px;
         }
 
         &__form {
             max-width: 1200px;
             margin: 0, auto;
-                   
-            
+
+
             &__labels {
                 font-family: $offer_font-family;
                 font-weight: $offer_font-weight_500;
@@ -80,7 +81,7 @@ $offer_font-style: normal;
                 margin-left: 120px;
                 border: 0;
             }
-            
+
             &__author {
                 width: 1000px;
                 height: 58px;
@@ -123,7 +124,7 @@ $offer_font-style: normal;
                 left: 1170px;
                 top: 570px;
                 outline: none;
-                
+
                 // right: 1200px;
                 // z-index: 0;
             }
@@ -159,92 +160,93 @@ $offer_font-style: normal;
                 margin: 5px 0 25px 120px;
                 font-size: 20px;
 
-              &__video {
-                width: 500px;
-                height: 160px;
-                border: 2px solid #54274A;
-                outline: none;
-                padding: 0;
-                margin: 5px 80px 25px 20px;
-                font-size: 20px;
-            }
-
-            &__video + &__video {
-                margin-left: 10px;
-            }
-
-            &__video-block {
-                display: flex;
-                margin-left: 120px;
-            }
-
-            &__video-text {
-                width: 1000px;
-                margin-right: 0 auto;
-                
-                &__video-text1 {
-                    font-family: $offer_font-family;
-                    font-weight: $offer_font-weight_400;
-                    font-style: $offer_font-style;
-                    font-size: 15px;
-                
-                    max-width: 50px;
-                    text-align: left;
-                    margin: 10px auto 10px;
-                    color: #000;
-                }
-            }
-
-
-            &__solution {
-                width: 1000px;
-                height: 58px;
-                border: 1px solid #54274A;
-                outline: none;
-                padding: 0;
-                margin: 5px 0 25px 120px;
-                font-size: 20px;
-                padding-left: 20px;
-            }
-
-            &__buttons {
-                display: flex;
-                justify-content: center;
-    
-                button {
-                    font-family: $offer_font-family;
-                    font-weight: $offer_font-weight_500;
-                    font-style: $offer_font-style;
+                &__video {
+                    width: 500px;
+                    height: 160px;
+                    border: 2px solid #54274A;
+                    outline: none;
+                    padding: 0;
+                    margin: 5px 80px 25px 20px;
                     font-size: 20px;
-    
-                    background-color: #B490AC;
-                    color: #fff;
-                    border: 0;
-                    padding: 19px 55px 19px 55px;
-                    border-radius: 30px;
-                    margin: 0 0 39px 0;
-                    cursor: pointer;
-                    text-align: center;
                 }
+
+                &__video+&__video {
+                    margin-left: 10px;
+                }
+
+                &__video-block {
+                    display: flex;
+                    margin-left: 120px;
+                }
+
+                &__video-text {
+                    width: 1000px;
+                    margin-right: 0 auto;
+
+                    &__video-text1 {
+                        font-family: $offer_font-family;
+                        font-weight: $offer_font-weight_400;
+                        font-style: $offer_font-style;
+                        font-size: 15px;
+
+                        max-width: 50px;
+                        text-align: left;
+                        margin: 10px auto 10px;
+                        color: #000;
+                    }
+                }
+
+
+                &__solution {
+                    width: 1000px;
+                    height: 58px;
+                    border: 1px solid #54274A;
+                    outline: none;
+                    padding: 0;
+                    margin: 5px 0 25px 120px;
+                    font-size: 20px;
+                    padding-left: 20px;
+                }
+
+                &__buttons {
+                    display: flex;
+                    justify-content: center;
+
+                    button {
+                        font-family: $offer_font-family;
+                        font-weight: $offer_font-weight_500;
+                        font-style: $offer_font-style;
+                        font-size: 20px;
+
+                        background-color: #B490AC;
+                        color: #fff;
+                        border: 0;
+                        padding: 19px 55px 19px 55px;
+                        border-radius: 30px;
+                        margin: 0 0 39px 0;
+                        cursor: pointer;
+                        text-align: center;
+                    }
+                }
+
             }
-
         }
-    }
 
-    p {
-        font-family: $offer_font-family;
-        font-weight: $offer_font-weight_400;
-        font-style: $offer_font-style;
-        font-size: 24px;
-    
-        max-width: 862px;
-        text-align: center;
-        margin: 20px auto;
-        color: #000;
-           
-        a {
-            text-decoration: none;
-            color: #54274A;
+        p {
+            font-family: $offer_font-family;
+            font-weight: $offer_font-weight_400;
+            font-style: $offer_font-style;
+            font-size: 24px;
+
+            max-width: 862px;
+            text-align: center;
+            margin: 20px auto;
+            color: #000;
+
+            a {
+                text-decoration: none;
+                color: #54274A;
+            }
         }
     }
 }
