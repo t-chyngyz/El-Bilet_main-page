@@ -28,21 +28,20 @@
                 <div class="entrance__inside-blocks__form">
                     <h5 class="entrance__inside-blocks__form__heading-text">У вас нет аккаунта? <a href="#">Зарегистрироваться</a></h5>
 
-                    <div class="entrance__inside-blocks__form__block-form">
-                        <h3 class="entrance__inside-blocks__form__block-form__heading-text-style">Войти в ЭлБилет</h3>
+                                        <div class="entrance__inside-blocks__form__block-form">
+                                            {% if form.errors %}
+                                            <h3 class="entrance__inside-blocks__form__block-form__heading-text-style">E-mail адрес и/или пароль не верны.</h3>
+                                            {% endif %}
 
-                        {% if form.errors %}
-                          Your username and password didn't match. Please try again.
-                        {% endif %}
-
-                        {% if next %}
-                          {% if user.is_authenticated %}
-                            Your account doesn't have access to this page. To proceed,
-                            please login with an account that has access.
-                          {% else %}
-                            Please login to see this page.
-                          {% endif %}
-                        {% endif %}
+                                            {% if next %}
+                                              {% if user.is_authenticated %}
+                                              <h3 class="entrance__inside-blocks__form__block-form__heading-text-style">У вашей учетной записи нет доступа к этой странице. Чтобы продолжить, войдите в систему с учетной записью, у которой есть доступ.</h3>
+                                              {% else %}
+                                                <h3 class="entrance__inside-blocks__form__block-form__heading-text-style">Войти в ЭлБилет</h3>
+                                              {% endif %}
+                                            {% else %}
+                                              <h3 class="entrance__inside-blocks__form__block-form__heading-text-style">Войти в ЭлБилет</h3>
+                                            {% endif %}
 
 
                           <form method="post" action="{% url 'account_login' %}">
