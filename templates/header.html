@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block header %}
+<header class="header">
+    <div class="header__inner-line">
+        <div class="header__logo">
+            <a href="#" class="header__logo-link">
+                <img src="{% static 'bilet/IMG/logo.png' %}" alt="logo el bilet">
+            </a>
+        </div>
+
+        <nav class="nav">
+            <ul>
+                <a href="#" class="nav__link-aboutus"><li>О нас</li></a>
+                <a href="#" class="nav__link-services"><li>Услуги</li></a>
+                <a href="#" class="nav__link-polls"><li>Опросы</li></a>
+                <a href="#" class="nav__link-contacts"><li>Контакты</li></a>
+                <!-- <a href="#" class="nav__link-registration"><li>Регистрация</li></a> -->
+                <li>
+                    <select name="lang" class="langs" id="langs">
+                        <option value="ru">RU</option>
+                        <option value="en">EN</option>
+                        <option value="kg">KG</option>
+                    </select>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+{% endblock header %}

@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block header %}
+{% include 'header.html' %}
+{% endblock header %}
+
+
+{% block main %}
+
+<main>
+    <section class="registration">
+        <div class="registration__block">
+            <h2 class="registration__block__heading-text">Откуда Вы?</h2>
+            <form action=" {% url 'account_signup' %} " class="registration__block__form">
+
+              {{ user_form.as_p }}
+              {% csrf_token %}
+
+
+                <label for="country" class="registration__block__labels">Страна</label><br>
+                <input type="country" name="country" class="registration__block__input-country">
+                <select name="country" class="registration__block__country">
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select><br>
+
+                <label for="rovince" class="registration__block__labels">Область/Район/Регион</label><br>
+                <input type="rovince" name="rovince" class="registration__block__input-rovince">
+                <select name="rovince" class="registration__block__rovince">
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select><br>
+
+                <label for="city" class="registration__block__labels">Город</label><br>
+                <input type="city" name="city" class="registration__block__input-city">
+                <select name="city" class="registration__block__city">
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select><br>
+
+                <label for="employment" class="registration__block__labels">Вид занятости</label><br>
+                <input type="employment" name="employment" class="registration__block__input-employment">
+                <select name="employment" class="registration__block__employment">
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select><br>
+
+                <div class="registration__block__buttons">
+                    <button type="submit">Назад</button>
+                    <button type="submit">Дальше</button>
+                </div>
+            </form>
+        </div>
+
+        <p>Проблемы или вопросы о регистрации? Пожалуйста ,напишите нам по электроной почте: <a href="#">singup@elbilet.com</a></p>
+    </section>
+</main>
+
+{% endblock main %}
+
+{% block footer %}
+{% include 'footer.html' %}
+{% endblock footer %}

@@ -158,9 +158,8 @@ $offer_font-style: normal;
                 padding: 0;
                 margin: 5px 0 25px 120px;
                 font-size: 20px;
-            }
 
-            &__video {
+              &__video {
                 width: 500px;
                 height: 160px;
                 border: 2px solid #54274A;
@@ -173,7 +172,6 @@ $offer_font-style: normal;
             &__video + &__video {
                 margin-left: 10px;
             }
-
 
             &__video-block {
                 display: flex;
@@ -254,4 +252,3 @@ $offer_font-style: normal;
 .redstar {
     color: red;
 }
-
