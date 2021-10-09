@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elbilet Announsment</title>
-    <link rel="stylesheet" href="./css/style.min.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Announcement Card</title>
+    <link rel="stylesheet" href="CSS/style.min.css">
+  </head>
+  <body>
     <header class="header">
         <div class="header__inner-line">
             <div class="header__logo">
@@ -20,7 +20,7 @@
                 <ul>
                     <a href="#" class="nav__link-aboutus"><li>О нас</li></a>
                     <a href="#" class="nav__link-services"><li>Услуги</li></a>
-                    <a href="#" class="nav__link-polls"><li>Опросы</li></a>
+                  <!--  <a href="#" class="nav__link-polls"><li>Опросы</li></a>-->
                     <a href="#" class="nav__link-contacts"><li>Контакты</li></a>
                     <a href="#" class="nav__link-registration"><li>Регистрация</li></a>
                     <li>
@@ -34,37 +34,38 @@
             </nav>
         </div>
     </header>
-<main>
-   
-        <div class="wrapper">
-            <div class="main__autor">
-                <div class="autor__left">
-                <img src="./img/announcement_card.jpg" width="250" height="250" alt="autor">
-                </div>
-                <div class="autor__right">
-                    <h3>отправлено   20.09.2021</h3>
-                     <p >Уже третий разв течении месяца  попадается хлеб(разных сортов) из муки зараженной картофельной палочкой.
-                      И именно тот хлеб,который пекут в самом Гипермаркете. 
-                       До этого все нравилось.Даже были любимые сорта хлебобулочных изделий.
-                    </p> 
-                
-                </div>
-            </div>
-        </div> 
-    </main>
-<section>
-    <div class="wrapper-2">
-        <p class="files">Прикрепленные файлы:</p>
-        <div class="files__botton">
-        <img class="files__photo" src="./img/carbon_photo.svg" alt="photo">
-        <img class="files__photo" src="./img/carbon_photo.svg" alt="photo">
-        <img class="files__photo" src="./img/carbon_photo.svg" alt="photo">
-        
-    </div>
-    <button class="button-like">нравиться</button>
-    </div>
-</section>
 
+    <main class="announcement">
+      <div class="containerForAll container-user1">
+        <div class="autorPhoto">
+          <h3 class="author-name1">Author</h3>
+        </div>
+        <div class="user-announcement">
+          <p>Oтправлено 20.09.2021 <br /><br /></p>
+          <p>
+            Уже третий разв течении месяца попадается хлеб(разных сортов) из
+            муки зараженной картофельной палочкой.
+
+            <br /><br />И именно тот хлеб,который пекут в самом Гипермаркете.
+
+            <br /><br />До этого все нравилось.Даже были любимые сорта
+            хлебобулочных изделий.
+          </p>
+        </div>
+      </div>
+      <h3 class="title-user-card3">Прикрепленные файлы:</h3>
+      <div class="uls-card">
+        <ul class="cards-user">
+          <li class="photo-card-user"></li>
+          <li class="photo-card-user"></li>
+          <li class="photo-card-user"></li>
+        </ul>
+        <ul class="like">
+          
+          <li class="like-userCard"><a href="#">нравится</a></li>
+        </ul>
+      </div>
+    </main>
 
     <footer class="footer">
         <div class="footer__inside-blocks">
@@ -92,6 +93,5 @@
             </div>
         </div>
       </footer>
-
-</body>
+  </body>
 </html>
