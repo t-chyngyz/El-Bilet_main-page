@@ -26,7 +26,7 @@
                 </div>
 
                 <div class="entrance__inside-blocks__form">
-                    <h5 class="entrance__inside-blocks__form__heading-text">У вас нет аккаунта? <a href="#">Зарегистрироваться</a></h5>
+                    <h5 class="entrance__inside-blocks__form__heading-text">У вас нет аккаунта? <a href="{% url 'account_signup' %}">Зарегистрироваться</a></h5>
 
                                         <div class="entrance__inside-blocks__form__block-form">
                                             {% if form.errors %}

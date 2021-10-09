@@ -13,7 +13,7 @@
     <section class="registration">
         <div class="registration__block">
             <h2 class="registration__block__heading-text">Откуда Вы?</h2>
-            <form action=" {% url 'register' %} " class="registration__block__form">
+            <form action=" {% url 'account_signup' %} " class="registration__block__form">
 
               {{ user_form.as_p }}
               {% csrf_token %}
