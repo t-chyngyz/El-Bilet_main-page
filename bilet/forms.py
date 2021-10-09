@@ -2,6 +2,7 @@ from allauth.account.forms import LoginForm, SignupForm
 from django import forms
 import datetime
 from country_utils.countries import COUNTRY_CHOICES
+from .models import Profile
 
 class MyCustomLoginForm(LoginForm):
 
@@ -67,10 +68,15 @@ class MyCustomSignupForm(SignupForm):
 
     def save(self, request):
         user = super(MyCustomSignupForm, self).save(request)
+        print(user.__dict__)
         user.first_name = self.cleaned_data['first_name']
         user.last_name = self.cleaned_data['last_name']
-        user.birth_date = self.cleaned_data['birth_date']
-        user.employment = self.cleaned_data['employment']
-        user.country = self.cleaned_data['country']
+        profile = Profile(user = user, \
+                        employment = self.cleaned_data['employment'], \
+                        country = self.cleaned_data['country'], \
+                        region = self.cleaned_data['region'], \
+                        birth_date = self.cleaned_data['birth_date'], \
+        )
+        profile.save()
         user.save()
         return user
