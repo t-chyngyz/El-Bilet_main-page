@@ -24,10 +24,6 @@
 @import "servicess/callcenter";
 @import "servicess/rating";
 
-//announcement_pages-burul
-@import "announcement/announcement";
-@import "announcement/section";
-@import "announcement/vars";
 
 // contacts_pages_burul
 @import "contacts/container-2";
@@ -45,6 +41,10 @@
 
 // APPEAL_PAGES-INDIRA
 @import "appeal/appeal";
+
+// ANOUNSMENT-PAGE-BURUL
+@import 'announcement/announcement';
+@import 'announcement/vars';
 
 *,
 *::after,
