@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="icon" href="IMG/favicon.png">
+     <link rel="icon" href="IMG/favicon.png">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,8 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/style.min.css">
-    <title>Предложение</title>
+    <title>Обращения по категориям</title>
   </head>
+
   <body>
     <header class="header">
       <div class="header__inner-line">
@@ -41,7 +42,7 @@
             <li class="nav__signin">
               <a href="entrance.html" class="nav__link-registration">Войти</a>
               <ul class="nav__link-registration__ul">
-                <li><a href="#">Мой кабинет</a></li>
+                <li><a href="#">Профиль</a></li>
                 <li><a href="#">Выйти</a></li>
               </ul>
             </li>
@@ -56,132 +57,103 @@
         </nav>
       </div>
     </header>
-
-    <main>
-      <section class="offer">
-        <div class="offer__block">
-          <div class="offer__block__yesno">
-            <h2 class="offer__block__yesno-text">Вы зарегистрированы?</h2>
-            <a href="№" class="offer__block__yesno-yeslink">Да</a>
-            <a href="№" class="offer__block__yesno-nolink">Нет</a>
-          </div>
-
-          <div class="offer__block__text">
-            Поля, отмеченные <span class="redstar">*</span>, обязательны для
-            заполнения
-          </div>
-
-          <form action="#" class="offer__block__form">
-            <label for="author" class="offer__block__form__labels"
-              >Автор<span class="redstar">*</span></label
-            ><br />
-            <input type="author" class="offer__block__form__author" />
-            <br />
-
-            <label for="theme" class="offer__block__form__labels"
-              >Тема<span class="redstar">*</span></label
-            ><br />
-            <input
-              type="theme"
-              name="theme"
-              class="offer__block__form__theme"
-            />
-            <br />
-
-            <label for="theme" class="offer__block__form__labels"
-              >Категория<span class="redstar">*</span></label
-            ><br />
-            <input
-              type="category"
-              name="category"
-              class="offer__block__form__category"
-            />
-            <select name="category" class="offer__block__form__category-sel">
-              <option value=""></option>
-              <option value=""></option>
-              <option value=""></option>
-            </select>
-            <br />
-
-            <label for="address" class="offer__block__form__labels"
-              >Адрес, по которому у вас имеются предложения<span class="redstar"
-                >*</span
-              ></label
-            ><br />
-            <input
-              type="address"
-              name="address"
-              class="offer__block__form__address"
-            />
-            <br />
-
-            <label for="text" class="offer__block__form__labels"
-              >Текст предложения<span class="redstar">*</span></label
-            ><br />
-            <textarea
-              class="offer__block__form__text"
-              name="text"
-              id="text"
-              cols="100"
-              rows="20"
-            ></textarea>
-            <br />
-
-            <label for="audio" class="offer__block__form__labels"
-              >Аудиопредложение</label
-            ><br />
-            <input
-              type="audio"
-              name="audio"
-              class="offer__block__form__audio"
-            />
-            <br />
-
-            <div class="offer__block__form__video-block">
-              <div class="offer__block__form__video-text">
-                <label for="video" class="offer__block__form__labels"
-                  >Фото/Видео</label
-                ><br />
-                <p class="offer__block__form__video-text1">
-                  Размер фото не более 500кб
+    <section class="bycategory">
+      <div class="bycategory__by-container">
+        <div class="bycategory__by-blocks">
+          <h2 class="bycategory__by-title">Дороги и транспорт</h2>
+          <div class="bycategory__by-item-block">
+            <div class="bycategory__by-item-block-inner">
+              <h2 class="bycategory__by-item-title">Не работает лифт</h2>
+              <div class="bycategory__by-item-inner">
+                <p class="bycategory__by-item-status">
+                  Статус <br />Голосов 50
                 </p>
-                <p class="offer__block__form__video-text1">
-                  Размер видео не более 1MB
-                </p>
+                <img class="bycategory__icon" src="IMG/icon-by01.svg" alt="" />
+                <div class="bycategory__by-counter"></div>
+                <p class="bycategory__by-item-status">Автор <br />20.09.2021</p>
               </div>
-
-              <input
-                type="file"
-                name="video"
-                class="offer__block__form__video"
-              />
-              <input
-                type="file"
-                name="video"
-                class="offer__block__form__video"
-              />
-              <input
-                type="file"
-                name="video"
-                class="offer__block__form__video"
-              />
             </div>
-            <br />
-
-            <div class="offer__block__form__buttons">
-              <button type="submit">Отправить</button>
+            <div class="bycategory__by-item-block-inner">
+              <h2 class="bycategory__by-item-title">Не работает лифт</h2>
+              <div class="bycategory__by-item-inner">
+                <p class="bycategory__by-item-status">
+                  Статус <br />Голосов 50
+                </p>
+                <img class="bycategory__icon" src="IMG/icon-by02.svg" alt="" />
+                <div class="bycategory__by-counter"></div>
+                <p class="bycategory__by-item-status">Автор <br />20.09.2021</p>
+              </div>
             </div>
-          </form>
+            <div class="bycategory__by-item-block-inner">
+              <h2 class="bycategory__by-item-title">Не работает лифт</h2>
+              <div class="bycategory__by-item-inner">
+                <p class="bycategory__by-item-status">
+                  Статус <br />Голосов 50
+                </p>
+                <img class="bycategory__icon" src="IMG/icon-by02.svg" alt="" />
+                <div class="bycategory__by-counter"></div>
+                <p class="bycategory__by-item-status">Автор <br />20.09.2021</p>
+              </div>
+            </div>
+            <div class="bycategory__by-item-block-inner">
+              <h2 class="bycategory__by-item-title">Не работает лифт</h2>
+              <div class="bycategory__by-item-inner">
+                <p class="bycategory__by-item-status">
+                  Статус <br />Голосов 50
+                </p>
+                <img class="bycategory__icon" src="IMG/icon-by01.svg" alt="" />
+                <div class="bycategory__by-counter"></div>
+                <p class="bycategory__by-item-status">Автор <br />20.09.2021</p>
+              </div>
+            </div>
+            <div class="bycategory__by-item-block-inner">
+              <h2 class="bycategory__by-item-title">Не работает лифт</h2>
+              <div class="bycategory__by-item-inner">
+                <p class="bycategory__by-item-status">
+                  Статус <br />Голосов 50
+                </p>
+                <img class="bycategory__icon" src="IMG/icon-by01.svg" alt="" />
+                <div class="bycategory__by-counter"></div>
+                <p class="bycategory__by-item-status">Автор <br />20.09.2021</p>
+              </div>
+            </div>
+            <div class="bycategory__by-item-block-inner">
+              <h2 class="bycategory__by-item-title">Не работает лифт</h2>
+              <div class="bycategory__by-item-inner">
+                <p class="bycategory__by-item-status">
+                  Статус <br />Голосов 50
+                </p>
+                <img class="bycategory__icon" src="IMG/icon-by01.svg" alt="" />
+                <div class="bycategory__by-counter"></div>
+                <p class="bycategory__by-item-status">Автор <br />20.09.2021</p>
+              </div>
+            </div>
+            <div class="bycategory__by-item-block-inner">
+              <h2 class="bycategory__by-item-title">Не работает лифт</h2>
+              <div class="bycategory__by-item-inner">
+                <p class="bycategory__by-item-status">
+                  Статус <br />Голосов 50
+                </p>
+                <img class="bycategory__icon" src="IMG/icon-by02.svg" alt="" />
+                <div class="bycategory__by-counter"></div>
+                <p class="bycategory__by-item-status">Автор <br />20.09.2021</p>
+              </div>
+            </div>
+            <div class="bycategory__by-item-block-inner">
+              <h2 class="bycategory__by-item-title">Не работает лифт</h2>
+              <div class="bycategory__by-item-inner">
+                <p class="bycategory__by-item-status">
+                  Статус <br />Голосов 50
+                </p>
+                <img class="bycategory__icon" src="IMG/icon-by02.svg" alt="" />
+                <div class="bycategory__by-counter"></div>
+                <p class="bycategory__by-item-status">Автор <br />20.09.2021</p>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <p>
-          У вас есть вопросы при заполнении формы предложения? <br />Пожалуйста,
-          напишите нам по электроной почте:
-          <a href="#">elbiletkg@elbilet.com</a>
-        </p>
-      </section>
-    </main>
-
+      </div>
+    </section>
     <footer class="footer">
       <div class="footer__inside-blocks">
         <nav class="footer__inside-blocks__nav">
@@ -193,10 +165,10 @@
               <a href="#" class="footer__inside-blocks__nav__link">Услуги</a>
             </li>
             <li>
-              <a href="#" class="footer__inside-blocks__nav__link">Проекты</a>
+              <a href="#" class="footer__inside-blocks__nav__link">Контакты</a>
             </li>
             <li>
-              <a href="#" class="footer__inside-blocks__nav__link">Контакты</a>
+              <a href="#" class="footer__inside-blocks__nav__link">Войти</a>
             </li>
           </ul>
         </nav>
