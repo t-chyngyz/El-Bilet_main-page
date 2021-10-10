@@ -1,37 +1,97 @@
+
 @import 'vars';
-main{
-  display: block;
+.announcement {
+  margin: 0px auto 0px;
+  width: 1140px;
+  background-color: $light-blue;
 }
-.wrapper{
-  width: 100%;
-  margin: 0 auto;
-  
+.autorPhoto {
+  position: relative;
+  width: 295px;
+  height: 222px;
+  background-color: #c4c4c4;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 50px;
 }
-
-.main__autor{
-  display:flex;
-  padding: 100px 100px 30px 100px;
-  
-
+.containerForAll {
+  width: 1140px;
+  margin: auto;
 }
-.autor__left{
-  width: 593px;
-  height:322px ;
+.author-name1 {
+  position: absolute;
+  top: 250px;
+  left: 100px;
 }
-.autor__right{
-  
-  margin-left: 90px;
-  font-size: 22px;
+.container-user1 {
+  display: flex;
+  justify-content: start;
+}
+.user-announcement {
+  width: 503px;
+  margin-left: 20px;
+  margin-top: 50px;
   font-family: $main-font;
-  margin-bottom: 5px;
-
-  h3{
-    margin: 15px 0px;
-  }
-  p{
-    margin: 15px 0px;
-  }
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: left;
+  color: #000000;
 }
-
-
-
+.cards-user {
+  margin-left: 0;
+  margin-bottom: 70px;
+}
+.photo-card-user {
+  margin-left: 0;
+  width: 236px;
+  height: 195px;
+  background-color: #c4c4c4;
+  margin-right: 27px;
+}
+.cards-user {
+  display: flex;
+}
+.cards-user li {
+  list-style: none;
+}
+.uls-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 20px;
+}
+.like a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 700;
+}
+.like-userCard {
+  text-align: center;
+  width: 253px;
+  height: 44px;
+  list-style: none;
+  font-family: $main-font;
+  font-size: 24px;
+  line-height: 25px;
+  background-color: #c4c4c4;
+  padding: 10px;
+  border-radius: 12px;
+  margin-top: 10px;
+  margin-bottom: 70px;
+}
+.title-user-card3 {
+  font-family:$main-font ;
+  font-size: 24px;
+  line-height: 29px;
+  align-items: center;
+  margin: 150px 0 54px 90px;
+  color: #000000;
+} 
+*,
+*::after,
+*::before {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
