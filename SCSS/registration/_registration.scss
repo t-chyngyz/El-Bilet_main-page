@@ -20,8 +20,7 @@ $registration_font-style: normal;
         }
 
         &__buttons {
-            display: flex;
-            justify-content: space-between;
+           
 
             button {
                 font-family: $registration_font-family;
@@ -34,7 +33,7 @@ $registration_font-style: normal;
                 border: 0;
                 padding: 19px 55px 19px 55px;
                 border-radius: 30px;
-                margin: 0 0 122px 0;
+                margin: 0 0 50px 160px;
                 cursor: pointer;
             }
         }
@@ -53,7 +52,7 @@ $registration_font-style: normal;
         &__input-lastname {
             width: 736px;
             height: 58px;
-            border: 1px solid #54274A;
+            border: 1px solid #b19cac;
             outline: none;
             padding: 0;
             margin: 10px 0 37px 0;
