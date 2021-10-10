@@ -26,8 +26,8 @@
             <nav class="nav">
                 <ul>
                     <li><a href="#" class="nav__link-aboutus">О нас</a></li>
-                    <li><a href="#" class="nav__link-services">Услуги</a>
-                        <ul>
+                    <li class="nav__service"><a href="#" class="nav__link-services">Услуги</a>
+                        <ul class="nav__link-services__ul">
                             <li><a href="#">Форум для обсуждения НПА</a></li>
                             <li><a href="#">Волонтеры Кыргызстана</a></li>
                             <li><a href="#">Социальные проекты</a></li>
@@ -38,7 +38,12 @@
                         </ul>
                     </li>
                     <li><a href="#" class="nav__link-contacts">Контакты</a></li>
-                    <li><a href="#" class="nav__link-registration">Войти</a></li>
+                    <li class="nav__signin"><a href="#" class="nav__link-registration">Войти</a>
+                        <ul class="nav__link-registration__ul">
+                            <li><a href="#">Профиль</a></li>
+                            <li><a href="#">Выйти</a></li>
+                        </ul>
+                    </li>
                     <li>
                         <select name="lang" class="langs" id="langs">
                             <option value="ru">RU</option>
