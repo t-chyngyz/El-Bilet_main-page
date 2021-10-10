@@ -1,0 +1,79 @@
+.user-announcement-m {
+  font-family: Montserrat Alternates;
+  color: #000000;
+  text-align: left;
+  min-width: 1440px;
+  &__card-container {
+    background-color: #dae3f0;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 39px 0 70px;
+  }
+  &__card-top {
+    display: flex;
+    margin-left: 100px;
+  }
+  &__card-item-left {
+    position: relative;
+    width: 295px;
+    height: 222px;
+    background-color: #c4c4c4;
+    margin-right: 20px;
+  }
+  &__card-paragraph {
+    margin-top: 0;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    width: 593px;
+  }
+  &__author-name {
+    position: absolute;
+    top: 220px;
+    left: 111px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  &__card-bottom {
+    margin-top: 105px;
+    margin-left: 100px;
+  }
+  &__attach-files {
+    margin-left: 85px;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 40px;
+    font-weight: 500;
+  }
+  &__card-bottom-block {
+    display: flex;
+  }
+  &__card-bottom-items {
+    margin-right: 27px;
+    width: 236px;
+    height: 195px;
+    background-color: #c4c4c4;
+  }
+  &__card-bottom-send {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__card-bottom-edit {
+    text-align: center;
+    margin-top: 20px;
+    box-sizing: border-box;
+    padding-top: 8px;
+    width: 253px;
+    height: 44px;
+    background: #c4c4c4;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
