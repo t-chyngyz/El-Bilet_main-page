@@ -4,7 +4,6 @@ $appeal_font-weight_500: 500;
 $appeal_font-weight_700: 700;
 $appeal_font-style: normal;
 
-
 .appeal {
 
     &__block {
@@ -12,7 +11,6 @@ $appeal_font-style: normal;
         max-width: 1240px;
         margin: 0 auto;
         
-
         &__yesno {
             display: flex;
             align-items: center;
@@ -120,8 +118,8 @@ $appeal_font-style: normal;
                 border: 0;
                 background-color: none;
                 position: absolute;
-                left: 1200px;
-                top: 570px;
+                left: 1300px;
+                top: 540px;
                 outline: none;
                 
                 // right: 1200px;
@@ -254,4 +252,3 @@ $appeal_font-style: normal;
 .redstar {
     color: red;
 }
-

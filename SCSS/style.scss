@@ -26,7 +26,6 @@
 
 //announcement_pages-burul
 @import "announcement/announcement";
-@import "announcement/section";
 @import "announcement/vars";
 
 // contacts_pages_burul
@@ -46,18 +45,6 @@
 // APPEAL_PAGES-INDIRA
 @import "appeal/appeal";
 
-// ANOUNSMENT-PAGE-BURUL
-@import "announcement/announcement";
-@import "announcement/vars";
-
-//Request for Survey => MOLDOGAZY
-@import "requestforsurvey/requestforsurveyfile";
-
-//User Announcement Card => MOLDOGAZY
-@import "userannouncementcard/userannouncementcard";
-
-//By Category => MOLDOGAZY
-@import "bycategory/bycategory";
 *,
 *::after,
 *::before {
