@@ -17,38 +17,23 @@
     width: 1140px;
     margin-top: 20px;
     margin-bottom: 20px;
-
-
+     font-family: $main-font;
 
     .h2-plus{
             margin-left: 900px;
-           
+        
     }
+    .h2-plus2{
+            margin-left: 910px;
+    }
+    .h2-plus3{
+            margin-left: 826px;
+    }
+
         }
        
     
 }
-// @media (min-width:576px) {
-//     .container-2 {
-//      max-width:540px;
-//     }
-//    }
-//    @media (min-width:768px) {
-//     .container-2 {
-//      max-width:720px;
-//     }
-//    }
-//    @media (min-width:992px) {
-//     .container-2 {
-//      max-width:960px;
-//     }
-//    }
-//    @media (min-width:1200px) {
-//     .container-2 {
-//      max-width:1140px;
-//     }
-//    }
-
 
  .text-bottom{
       font-family: $main-font;

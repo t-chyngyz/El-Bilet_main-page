@@ -39,13 +39,21 @@ padding: 30px;
   margin-left: 30px;
 
 }
+.container__item:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
 .container__item{
         
        &__title-link{
-                 //margin: 0;
+                 
                  font-family: $main-font;
                   text-decoration: none; 
                   font-size: 24px;
+                  color:black;
+             }
+             &__title-link:hover{
+               color: #B490AC;
+               
              }
          
              &__title{
@@ -76,7 +84,8 @@ padding: 30px;
               }
              h3 &__title{
                padding: 30px;
-             }
+              }
+              
     }
 
 }
