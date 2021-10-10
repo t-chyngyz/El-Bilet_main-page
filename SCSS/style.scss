@@ -24,6 +24,11 @@
 @import "servicess/callcenter";
 @import "servicess/rating";
 
+//announcement_pages-burul
+@import "announcement/announcement";
+@import "announcement/section";
+@import "announcement/vars";
+
 // contacts_pages_burul
 @import "contacts/container-2";
 @import "contacts/container";
@@ -47,6 +52,7 @@
 
 //requestforsurvey
 @import "requestforsurvey/requestforsurveyfile";
+
 *,
 *::after,
 *::before {
