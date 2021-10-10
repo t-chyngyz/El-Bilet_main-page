@@ -1,0 +1,57 @@
+// MAIN_PAGES-ERBOL
+@import "main/topscreen";
+@import "main/appeall";
+@import "main/offer";
+@import "main/services";
+@import "main/results";
+
+// ALL_PAGES
+@import "header";
+@import "footer";
+
+// REGISTRATION_PAGES-ERBOL
+@import "registration/registration";
+
+// ENTRANCE_PAGES-ERBOL
+@import "entrance/entrance";
+
+// SERVICES_PAGE-ERBOL
+@import "servicess/npa";
+@import "servicess/volunteer";
+@import "servicess/project";
+@import "servicess/survey";
+@import "servicess/analystdate";
+@import "servicess/callcenter";
+@import "servicess/rating";
+
+//announcement_pages-burul
+@import "announcement/announcement";
+@import "announcement/vars";
+
+// contacts_pages_burul
+@import "contacts/container-2";
+@import "contacts/container";
+@import "contacts/topscreen1burul";
+@import "contacts/vars";
+
+//Abou Us MOLDOGAZY
+@import "aboutus/about";
+@import "aboutus/container-MOLDOGAZY";
+@import "aboutus/missionVision";
+
+// OFFER_PAGES-INDIRA
+@import "offer/offer";
+
+// APPEAL_PAGES-INDIRA
+@import "appeal/appeal";
+
+//From MOLDOGAZY By category
+@import "bycategory/bycategory";
+@import "requestforsurvey/requestforsurvey";
+@import "userannouncementcard/userannouncementcard";
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: border-box;
+}
