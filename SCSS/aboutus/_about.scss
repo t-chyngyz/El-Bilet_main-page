@@ -1,25 +1,30 @@
 .about {
   text-align: center;
-  &__container {
-    width: 987px;
-    margin: auto;
-    padding: 0 14px;
-  }
 
-  &__items-title {
+  &__title {
     font-family: Montserrat Alternates;
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 24px;
     line-height: 29px;
     text-align: center;
     color: #000000;
     margin: 26px 0 46px;
   }
+  &__items-title {
+    font-family: Montserrat Alternates;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 20px;
+  }
   &__inner {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 50px;
+    margin-bottom: 50px;
   }
   &__items-paragraph {
     font-family: Montserrat Alternates;
@@ -39,6 +44,7 @@
     padding: 16px;
     overflow: hidden;
     margin: 0;
+    transition: all 0.3s;
   }
   &__img {
     width: 191px;
