@@ -1,0 +1,104 @@
+$mycab_font-family: 'Montserrat Alternates', sans-serif;
+$mycab_font-weight_400: 400;
+$mycab_font-weight_500: 500;
+$mycab_font-weight_700: 700;
+$mycab_font-style: normal;
+
+
+.mycab {
+
+    &__block {
+        background-color: #DAE3F0;
+        max-width: 1240px;
+        margin: 0 auto;
+        padding-bottom: 50px;
+        
+        &__top {
+            display: flex;
+            margin: 20px 120px;
+            padding: 20px 0px;
+            // position: absolute;
+        
+            &__card {
+                margin: 20px 20px;
+                padding: 20px 0px;
+                position: relative;
+                width: 295px;
+                height: 250px;
+                background-color: #c4c4c4;
+                margin-right: 20px;
+            }
+        
+            &__author {
+            
+                &__name {
+                    font-family: $mycab_font-family;
+                    font-style: $mycab_font-style;
+                    font-weight: $mycab_font-weight_700;
+                    font-size: 26px;
+                    padding: 20px 0 0 20px;
+            }
+
+                &__address {
+                    font-family: $mycab_font-family;
+                    font-style: $mycab_font-style;
+                    font-weight: $mycab_font-weight_700;
+                    font-size: 20px; 
+                    padding: 20px 0 0 20px;  
+                }
+            }
+        }
+
+        &__bottom {
+
+            &__myappeals {
+                width: 1240px;
+                height: auto;
+                margin: 0; 
+                
+                &__title {
+                    font-family: $mycab_font-family;
+                    font-style: $mycab_font-style;
+                    font-weight: $mycab_font-weight_700;
+                    font-size: 20px; 
+                    padding: 20px 0 0 20px; 
+                    margin: 20px 120px;
+                }
+
+                &__table {
+                    margin: 20px 120px;
+                             
+                }
+
+                &__table1 {
+                    font-family: $mycab_font-family;
+                    font-style: $mycab_font-style;
+                    font-weight: $mycab_font-weight_700;
+                    font-size: 18px; 
+                    width: 100%;
+                    height: 20px;
+                    border-spacing: 0;
+                    border: 1px solid black;
+                    
+                    th {
+                        padding: 5px 10px;
+                        border: 1px solid black;
+                        height: 40px;
+                        background-color: #B490AC;
+                        color: #fff;
+                    }
+                    
+                    td {
+                        padding: 5px 10px;
+                        border: 1px solid black;
+                        height: 40px;
+                        font-size: 15px; 
+                        margin-bottom: 50px;
+                    }
+
+                }
+ 
+            }
+        }
+    }
+}
