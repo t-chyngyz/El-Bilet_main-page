@@ -4,28 +4,33 @@
 <header class="header">
     <div class="header__inner-line">
         <div class="header__logo">
-            <a href="#" class="header__logo-link">
+            <a href="{% url 'index' %}" class="header__logo-link">
                 <img src="{% static 'bilet/IMG/logo.png' %}" alt="logo el bilet">
             </a>
         </div>
 
         <nav class="nav">
             <ul>
-                <li><a href="#" class="nav__link-aboutus">О нас</a></li>
-                <li><a href="#" class="nav__link-services">Услуги</a>
-                    <ul>
-                        <li><a href="#">Форум для обсуждения НПА</a></li>
-                        <li><a href="#">Волонтеры Кыргызстана</a></li>
-                        <li><a href="#">Социальные проекты</a></li>
-                        <li><a href="#">Опросы</a></li>
-                        <li><a href="#">Дата аналитика для маркетинговых иследований</a></li>
-                        <li><a href="#">Народный call center</a></li>
-                        <li><a href="#">Рейтинговое агентство</a></li>
+                <li><a href="{% url 'aboutus' %}" class="nav__link-aboutus">О нас</a></li>
+                <li class="nav__service"><a href="{% url 'services' %}" class="nav__link-services">Услуги</a>
+                    <ul class="nav__link-services__ul">
+                        <li><a href="{% url 'services' %}">Форум для обсуждения НПА</a></li>
+                        <li><a href="{% url 'services' %}">Волонтеры Кыргызстана</a></li>
+                        <li><a href="{% url 'services' %}">Социальные проекты</a></li>
+                        <li><a href="{% url 'services' %}">Опросы</a></li>
+                        <li><a href="{% url 'services' %}">Маркетинговые исследования</a></li>
+                        <li><a href="{% url 'services' %}">Народный call center</a></li>
+                        <li><a href="{% url 'services' %}">Рейтинговое агентство</a></li>
                     </ul>
                 </li>
-                <li><a href="#" class="nav__link-contacts">Контакты</a></li>
+                <li><a href="{% url 'contacts' %}" class="nav__link-contacts">Контакты</a></li>
                 {% if user.is_authenticated %}
-                <li><a href="{% url 'account_logout' %}" class="nav__link-registration">Выйти</a></li>
+                <li><a href="#" class="nav__link-registration">{{ user.username }}</a>
+                <ul class="nav__link-registration__ul">
+                    <li><a href="#">Профиль</a></li>
+                    <li><a href="{% url 'account_logout' %}">Выйти</a></li>
+                </ul>
+                </li>
                 {% else %}
                 <li><a href="{% url 'account_login' %}" class="nav__link-registration">Войти</a></li>
                 {% endif %}

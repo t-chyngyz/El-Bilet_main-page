@@ -34,11 +34,11 @@ class Handling(models.Model):
     solution = models.CharField(max_length=50)
 
 
-class Proposal(models.Model):
+class Offer(models.Model):
     authorid = models.ForeignKey(User, on_delete=models.CASCADE)
+    subject = models.CharField(max_length=50, default='Как жить дальше!!!')
     categoryid = models.ForeignKey(Category, on_delete=models.CASCADE)
-    typerecordid = models.ForeignKey(TypeRecord, on_delete=models.CASCADE)
-    file = models.ForeignKey(File, on_delete=models.CASCADE)
-    handlingid = models.ForeignKey(Handling, on_delete=models.CASCADE)
-    subjectproposal = models.CharField(max_length=50)
+    address = models.CharField(max_length=50, default='Бишкек')
     text = models.TextField()
+    audiooffer = models.CharField(max_length=50, default='ФАЙЛ')
+    file = models.ImageField(upload_to='offer')

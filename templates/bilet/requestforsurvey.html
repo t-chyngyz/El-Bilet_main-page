@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block header %}
+{% include 'header.html' %}
+{% endblock header %}
+
+
+{% block main %}
+
+<section class="requestfor">
+  <div class="requestfor__survey-container">
+    <div class="requestfor__survey-inner">
+      <div class="requestfor__survey-inner-top">
+        <h2 class="requestfor__survey-title">Создать онлайн опрос</h2>
+        <p class="requestfor__survey-paragraph">
+          Онлайн опрос - это популярный способ для исследования
+          удовлетворенности пользователей, получения отзывов, маркетингового
+          исследования и другие онлайн опросники и анкеты.
+        </p>
+        <form
+          class="requestfor__survey-form"
+          method="POST" >
+          <!-- action="mailto:elbiletkg@gmail.com" -->
+
+        {{ form.as_p }}
+        {% csrf_token %}
+          <!-- <input
+            class="requestfor__survey-input"
+            type="text"
+            placeholder="Имя или название компании"
+            required
+          />
+          <input
+            class="requestfor__survey-input"
+            type="email"
+            placeholder="email"
+            required
+          />
+          <input
+            class="requestfor__survey-input"
+            type="tel"
+            placeholder="телефон"
+            required
+          />
+          <textarea
+            class="requestfor__survey-textarea"
+            placeholder="Oписание целей и задач опроса"
+            required
+          ></textarea> -->
+          <button class="requestfor__survey-btn" type="submit">
+            Отправить заявку
+          </button>
+        </form>
+      </div>
+      <div class="requestfor__survey-inner-bottom">
+        <h2 class="requestfor__survey-title">ИЛИ</h2>
+        <div class="requestfor__survey-bottom-block">
+          <h2 class="requestfor__survey-bottom-title">Позвоните нам</h2>
+          <p class="requestfor__survey-bottom-paragraph">
+            Есть вопросы? Мы поможем!
+          </p>
+          <p class="requestfor__survey-bottom-paragraph">
+            WhatsApp/телеграмм: 0777 777 777
+          </p>
+          <p class="requestfor__survey-bottom-paragraph">
+            Позвонить с сайта
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    {% endblock main %}
+
+    {% block footer %}
+    {% include 'footer.html' %}
+    {% endblock footer %}

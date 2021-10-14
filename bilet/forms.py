@@ -2,7 +2,7 @@ from allauth.account.forms import LoginForm, SignupForm
 from django import forms
 import datetime
 from country_utils.countries import COUNTRY_CHOICES
-from .models import Profile
+from .models import Profile, Offer
 
 class MyCustomLoginForm(LoginForm):
 
@@ -80,3 +80,37 @@ class MyCustomSignupForm(SignupForm):
         profile.save()
         user.save()
         return user
+
+
+class RequestForm(forms.Form):
+    name = forms.CharField(label='', \
+        widget=forms.TextInput(attrs={
+        'class':'requestfor__survey-input', \
+        'placeholder': 'Имя или название компании'}))
+    email = forms.EmailField(label='', \
+        widget=forms.EmailInput(attrs={
+        'class':'requestfor__survey-input', \
+        'placeholder': 'Email'}))
+    phone = forms.CharField(label='', \
+        widget=forms.TextInput(attrs={
+        'class':'requestfor__survey-input', \
+        'placeholder': 'Телефон'}))
+    textarea = forms.CharField(label='', \
+        widget=forms.Textarea(attrs={
+        'class':'requestfor__survey-textarea', \
+        'placeholder': 'Oписание целей и задач опроса'}))
+
+
+class OfferForm(forms.ModelForm):
+    class Meta:
+        model = Offer
+        fields = ['authorid','subject','categoryid','address','text','audiooffer']
+
+    def save(self, commit=True):
+        instance = super().save(commit=False)
+        instance.some_flag = True
+        if commit:
+            instance.save()
+            self.save_m2m()
+        print(instance)
+        return instance

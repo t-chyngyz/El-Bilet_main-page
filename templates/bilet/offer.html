@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block header %}
+{% include 'header.html' %}
+{% endblock header %}
+
+
+{% block main %}
+<main>
+    <section class="offer">
+        <div class="offer__block">
+            <div class="offer__block__yesno">
+                <h2 class="offer__block__yesno-text">Вы зарегистрированы?</h2>
+                <a href="{% url 'account_login' %}" class="offer__block__yesno-yeslink">Да</a>
+                <a href="{% url 'account_signup' %}" class="offer__block__yesno-nolink">Нет</a>
+            </div>
+
+            <div class="offer__block__text">
+                Поля, отмеченные <span class="redstar">*</span>, обязательны для заполнения
+            </div>
+
+        <form class="offer__block__form" method="POST">
+
+          {{ form.as_p }}
+          {% csrf_token %}
+
+            <div class="offer__block__form__buttons">
+                <button type="submit">Отправить</button>
+            </div>
+            </form>
+        </div>
+
+        <p>У вас есть вопросы при заполнении формы предложения? <br>Пожалуйста, напишите нам по электроной почте: <a href="#">elbiletkg@elbilet.com</a></p>
+    </section>
+</main>
+    {% endblock main %}
+
+    {% block footer %}
+    {% include 'footer.html' %}
+    {% endblock footer %}

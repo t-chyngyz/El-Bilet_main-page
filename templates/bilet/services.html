@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block header %}
+{% include 'header.html' %}
+{% endblock header %}
+
+
+{% block main %}
+<main>
+    <section class="npa">
+        <img src="{% static 'bilet/IMG/npa.jpg' %}" alt="">
+
+        <div class="npa__block">
+            <h1 class="npa__block__heading-text">Форум для обсуждения НПА</h1>
+
+            <p class="npa__block__paragraph-text">Площадка для ознакомления и выражения мнений по разрабатываемым НПА в КР. Здесь граждане нашей страны смогут внести вклад в разработку новых законопроектов или предложить корректировку существующих. </p>
+
+            <a href="{% url 'requestforsurvey' %}" class="npa__block__link">Связаться</a>
+        </div>
+    </section>
+
+    <section class="volunteer">
+        <img src="{% static 'bilet/IMG/volunteers.jpg' %}" alt="">
+
+        <div class="volunteer__block">
+            <h1 class="volunteer__block__heading-text">Волонтеры Кыргызстана</h1>
+
+            <p class="volunteer__block__paragraph-text">Будь сопричастным к судьбе нуждающихся людей. Дари радость всем, кто в этом нуждается. Мы поможем найти занятие по душе и по силам.</p>
+
+            <div class="volunteer__block__btn">
+                <a href="{% url 'requestforsurvey' %}" class="volunteer__block__btn__link">Найти волонтеров</a>
+
+                <a href="{% url 'requestforsurvey' %}" class="volunteer__block__btn__link">Стать волонтером </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="project">
+        <img src="{% static 'bilet/IMG/projects.jpg' %}" alt="">
+
+        <div class="project__block">
+            <h1 class="project__block__heading-text">Социальные проекты</h1>
+
+            <p class="project__block__paragraph-text">Активные члены общества хотят решить актуальные проблемы! Это площадка для создания проектов отдельными лицами или организациями, заинтересованными в поддержке гражданских инициатив, в развитии образования, науки, истории, культуры и т.п.</p>
+
+            <a href="{% url 'requestforsurvey' %}" class="project__block__link">Связаться</a>
+        </div>
+    </section>
+
+    <section class="survey">
+        <img src="{% static 'bilet/IMG/survey.jpg' %}" alt="">
+
+        <div class="survey__block">
+            <h1 class="survey__block__heading-text">Опросы</h1>
+
+            <p class="survey__block__paragraph-text">Это популярный способ для исследования удовлетворенности пользователей, получения отзывов, маркетингового исследования и других мероприятий по продвижению продукта или услуги. Закажите опрос у нас и вы получите качественное опросное исследование для принятия правильного решения.</p>
+
+            <a href="{% url 'requestforsurvey' %}" class="survey__block__link">Связаться</a>
+        </div>
+    </section>
+
+    <section class="analystdate">
+        <img src="{% static 'bilet/IMG/analystdate.jpg' %}" alt="">
+
+        <div class="analystdate__block">
+            <h1 class="analystdate__block__heading-text">Дата аналитика для маркетинговых иследований</h1>
+
+            <p class="analystdate__block__paragraph-text">Используя современные технологии аналитики данных мы поможем вашему бизнесу принимать более грамотные решения каждый день. Аналитика данных - это путь к трансформации вашего бизнеса.</p>
+
+            <a href="{% url 'requestforsurvey' %}" class="analystdate__block__link">Связаться</a>
+        </div>
+    </section>
+
+    <section class="callcenter">
+        <img src="{% static 'bilet/IMG/callcenter.jpg' %}" alt="">
+
+        <div class="callcenter__block">
+            <h1 class="callcenter__block__heading-text">Народный call center</h1>
+
+            <p class="callcenter__block__paragraph-text">Call-центр на аутсорсинге – это эффективный помощник для вашего бизнеса. Не нужно отвлекать основных работников или приобретать коммуникационное оборудование. Мы предлагаем услугие call-center для обзвона клиентов, информирование, напоминание и приём заявок для государственных органов или бизнеса.</p>
+
+            <a href="{% url 'requestforsurvey' %}" class="callcenter__block__link">Связаться</a>
+        </div>
+    </section>
+
+    <section class="rating">
+        <img src="{% static 'bilet/IMG/kating.jpg' %}" alt="">
+
+        <div class="rating__block">
+            <h1 class="rating__block__heading-text">Независимое “рейтинговое” агентство</h1>
+
+            <p class="rating__block__paragraph-text">Мы предоставляем услуги по определению независимой оценки и опредлению “рейтинга” той или иной компании, организации, кандидата и т.п.</p>
+
+            <a href="{% url 'requestforsurvey' %}" class="rating__block__link">Связаться</a>
+        </div>
+    </section>
+</main>
+    {% endblock main %}
+
+    {% block footer %}
+    {% include 'footer.html' %}
+    {% endblock footer %}

@@ -1,13 +1,19 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin as DjangoUserAdmin
 from django.utils.translation import ugettext_lazy as _
-from .models import Profile
+from .models import Profile, Offer, Category
 
 @admin.register(Profile)
 class ProfileAdmin(admin.ModelAdmin):
     list_display = ['user','employment', 'country','region','birth_date']
 
+@admin.register(Offer)
+class OfferAdmin(admin.ModelAdmin):
+    list_display = ['authorid','subject','categoryid','address','text','audiooffer','file']
 
+@admin.register(Category)
+class CategoryAdmin(admin.ModelAdmin):
+    list_display = ['category']
 
 # Register your models here.
 

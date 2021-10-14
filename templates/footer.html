@@ -4,10 +4,14 @@
     <div class="footer__inside-blocks">
         <nav class="footer__inside-blocks__nav">
             <ul>
-                <li><a href="#" class="footer__inside-blocks__nav__link">О нас</a></li>
-                <li><a href="#" class="footer__inside-blocks__nav__link">Услуги</a></li>
-                <li><a href="#" class="footer__inside-blocks__nav__link">Контакты</a></li>
-                <li><a href="#" class="footer__inside-blocks__nav__link">Войти</a></li>
+                <li><a href="{% url 'aboutus' %}" class="footer__inside-blocks__nav__link">О нас</a></li>
+                <li><a href="{% url 'services' %}" class="footer__inside-blocks__nav__link">Услуги</a></li>
+                <li><a href="{% url 'contacts' %}" class="footer__inside-blocks__nav__link">Контакты</a></li>
+                {% if user.is_authenticated %}
+                <li><a href="{% url 'account_logout' %}" class="footer__inside-blocks__nav__link">Выйти</a></li>
+                {% else %}
+                <li><a href="{% url 'account_login' %}" class="footer__inside-blocks__nav__link">Войти</a></li>
+                {% endif %}
             </ul>
         </nav>
 

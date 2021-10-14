@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block header %}
+{% include 'header.html' %}
+{% endblock header %}
+
+
+{% block main %}
+<section class="about">
+  <div class="aboutus-container">
+    <div class="mission">
+      <h2 class="mission__title">Наша Миссия</h2>
+      <p class="mission__paragraph">
+        Мы создаем место для создания возможности каждому из Вас внести
+        вклад в развитие через Эл билет
+      </p>
+    </div>
+    <div class="vision">
+      <h2 class="vision__title">Наша Цель</h2>
+      <p class="vision__paragraph">
+        Цель данного проекта в том, чтобы наладить связь между народом и
+        государством, между народом и бизнесом, чтобы Ваш голос был услышан
+        и были предприняты действия для улучшения благосостояния народа.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="about">
+  <div class="aboutus-container">
+    <h2 class="about__title">Команда Эл Билет</h2>
+    <div class="about__inner">
+      <div class="about__items">
+        <img class="about__img" src="{% static 'bilet/IMG/Indira.jpg' %}" alt="Indira" />
+        <h3 class="about__items-title">
+          Индира Джамбаева <br>CEO,Product/Project /Programm/Portfolio manager
+        </h3>
+        <p class="about__items-paragraph">
+          “Всегда все решается как нужно! Вперед и выше!” <br /> <br>
+          MSFE, PMP, MBA, Engineer.
+        </p>
+      </div>
+      <div class="about__items">
+        <img class="about__img" src="{% static 'bilet/IMG/Narynkul.jpg' %}" alt="Narynkul" />
+        <h3 class="about__items-title">
+          Нарынкуль Жыргалбекова <br> Web Designer
+        </h3>
+        <p class="about__items-paragraph">
+          “Получай удовольствие от процесса!” Верю, что никогда не поздно
+          учиться новому, что всегда нужно идти в ногу со временем.<br>
+          <br />BA Economics, Advanced English
+        </p>
+      </div>
+      <div class="about__items">
+        <img class="about__img" src="{% static 'bilet/IMG/Erbol.jpg' %}" alt="Erbol" />
+        <h3 class="about__items-title">
+          Эрбол Тукашов<br> Front-End Developer
+        </h3>
+        <p class="about__items-paragraph">“Делай то, что нравится!” <br> <br> Applied Informatics
+        </p>
+      </div>
+      <div class="about__items">
+        <img class="about__img" src="{% static 'bilet/IMG/Burul.jpg' %}" alt="Burul" />
+        <h3 class="about__items-title">
+          Бурул Дыйканбекова <br />Web Designer/Front-End Developer
+        </h3>
+        <p class="about__items-paragraph">
+          “Люби себя и своё дело, действуй и будь благодарен каждой
+          возможности в твоем пути! Бери и делай!” <br /><br />BA Engineer
+        </p>
+      </div>
+      <div class="about__items">
+        <img class="about__img" src="{% static 'bilet/IMG/Chyngyz.jpg' %}" alt="Chyngyz" />
+        <h3 class="about__items-title">
+          Чынгыз Тойчубеков<br />
+          Python-Django/Back-End Developer
+        </h3>
+        <p class="about__items-paragraph">
+          “Не ленись! Rome wasn't built in a day”<br /><br>
+          RHCE/RHCSA, CCNA - System engineer
+        </p>
+      </div>
+      <div class="about__items">
+        <img class="about__img" src="{% static 'bilet/IMG/Moldogazy.jpg' %}" alt="Moldogazy" />
+        <h3 class="about__items-title">
+          Молдогазы Кабылбеков <br>Front-End Developer
+        </h3>
+        <p class="about__items-paragraph">
+          “Success does not consist in never making mistakes, but in never
+          making the same one a second time.” <br><br />BA Electronics and
+          Electrical Engineering
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+    {% endblock main %}
+
+    {% block footer %}
+    {% include 'footer.html' %}
+    {% endblock footer %}
