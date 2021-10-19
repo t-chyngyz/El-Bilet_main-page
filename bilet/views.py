@@ -2,7 +2,8 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render, get_object_or_404, redirect
 from .forms import OfferForm, RequestForm
-from django.views.generic.edit import FormView
+from .models import Offer
+from django.views.generic.edit import FormView, CreateView
 from django.views.generic import TemplateView
 
 
@@ -29,16 +30,18 @@ class RequestFormView(FormView):
     success_url ="/"
 
 
-class OffreFormView(FormView):
+class OffreFormView(CreateView):
+    model = Offer
     form_class = OfferForm
     template_name = 'bilet/offer.html'
     success_url ="/"
 
-    def form_valid(self, form):
-        # This method is called when valid form data has been POSTed.
-        # It should return an HttpResponse.
-        form.save()
-        return super().form_valid(form)
+    # def form_valid(self, form):
+    #     # This method is called when valid form data has been POSTed.
+    #     # It should return an HttpResponse.
+    #     print(form)
+    #     form.save()
+    #     return super().form_valid(form)
 
 # def offer(request):
 #     form = OfferForm()

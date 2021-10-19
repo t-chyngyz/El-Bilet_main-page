@@ -17,6 +17,9 @@ class Profile(models.Model):
 class Category(models.Model):
     category = models.CharField(max_length=50)
 
+    def __str__(self):
+        return str(self.category)
+
 
 class File(models.Model):
     file = models.CharField(max_length=50)
@@ -41,4 +44,4 @@ class Offer(models.Model):
     address = models.CharField(max_length=50, default='Бишкек')
     text = models.TextField()
     audiooffer = models.CharField(max_length=50, default='ФАЙЛ')
-    file = models.ImageField(upload_to='offer')
+    files = models.FileField(upload_to='offer/', null=True, blank=True)

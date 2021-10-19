@@ -3,6 +3,7 @@ from django import forms
 import datetime
 from country_utils.countries import COUNTRY_CHOICES
 from .models import Profile, Offer
+from django.forms import ClearableFileInput
 
 class MyCustomLoginForm(LoginForm):
 
@@ -104,13 +105,17 @@ class RequestForm(forms.Form):
 class OfferForm(forms.ModelForm):
     class Meta:
         model = Offer
-        fields = ['authorid','subject','categoryid','address','text','audiooffer']
+        # fields = ['authorid','subject','categoryid','address','text','audiooffer', '']
+        fields = '__all__'
+        # widgets = {
+        #     'files': ClearableFileInput(attrs={'multiple': True}),
+        # }
 
-    def save(self, commit=True):
-        instance = super().save(commit=False)
-        instance.some_flag = True
-        if commit:
-            instance.save()
-            self.save_m2m()
-        print(instance)
-        return instance
+    # def save(self, commit=True):
+    #     instance = super().save(commit=False)
+    #     instance.some_flag = True
+    #     if commit:
+    #         instance.save()
+    #         self.save_m2m()
+    #     print(instance)
+    #     return instance

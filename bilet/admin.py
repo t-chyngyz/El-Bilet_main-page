@@ -9,7 +9,7 @@ class ProfileAdmin(admin.ModelAdmin):
 
 @admin.register(Offer)
 class OfferAdmin(admin.ModelAdmin):
-    list_display = ['authorid','subject','categoryid','address','text','audiooffer','file']
+    list_display = ['authorid','subject','categoryid','address','text','audiooffer','files']
 
 @admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
