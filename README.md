@@ -21,20 +21,25 @@
     cd D:\El-Bilet_main-page>  <br />
     python -m venv venv <br />
     venv\Scripts\activate <br />
-    python3 -m pip install --upgrade pip <br />
+    python -m pip install --upgrade pip <br />
   b) Если MacOS запускаем терминал и набираем: <br />
     cd ~/El-Bilet_main-page <br />
     python3 -m venv venv <br />
     source venv/bin/activate <br />
     python3 -m pip install --upgrade pip <br />
-5) Клонируем git: <br />
+5) Переключаемся на ветку chyngyz git: <br />
   Если Windows в cmd(командная строка), если MacOS в терминале и набираем: <br />
-    git clone https://github.com/El-Bilet/El-Bilet_main-page . <br />
     git checkout chyngyz <br />
+    git pull origin/chyngyz <br />
 6) Устанавливаем Веб-фреймворк Django (Python): <br />
   Если Windows в cmd(командная строка), если MacOS в терминале и набираем: <br />
     pip install -r requirements.txt <br />
 7) Запускаем Веб-фреймворк Django (Python): <br />
   Если Windows в cmd(командная строка), если MacOS в терминале и набираем: <br />
-    python3 manage.py runserver <br />
+    python manage.py makemigrations <br />
+    python manage.py migrate <br />
+    python manage.py createsuperuser <br />
+    python manage.py runserver <br />
+8) В браузере набрать http://127.0.0.1:8000
+    Админка http://127.0.0.1:8000/admin
 
